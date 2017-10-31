@@ -9,12 +9,13 @@ const babelSettings = JSON.parse(fs.readFileSync(".babelrc"));
 const config = {
 	entry: [
 		'./src/index.js',
-		// 'react-hot-loader/patch',
+		'react-hot-loader/patch',
+		'webpack/hot/only-dev-server',
 	],
 	devServer: {
 		contentBase: path.resolve(__dirname, '../public'),
 		host: '0.0.0.0',
-		port: 9001,
+		port: 9000,
 		hot: true,
 		inline: true,
 	},
@@ -24,13 +25,7 @@ const config = {
 				test: /\.jsx|.js$/,
 				exclude: /(node_modules)/,
 				loader: "babel-loader",
-				query: babelSettings
-			},
-			// {
-			// 	test: /\.jsx|.js$/,
-			// 	exclude: /(node_modules)/,
-			// 	loader: 'react-hot'
-			// }
+			}
 		]
 	},
 	resolve: {
@@ -54,7 +49,8 @@ const config = {
 			{ from: 'public/js', to: 'js' },
 			{ from: 'public/images', to: 'images' },
 			// { from: 'public/manifest.json', to: '.' },
-		])
+		]),
+		new webpack.HotModuleReplacementPlugin(),
 	]
 };
 module.exports = config

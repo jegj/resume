@@ -48,6 +48,7 @@ const config = {
 			{ from: 'public/fonts', to: 'fonts' },
 			{ from: 'public/js', to: 'js' },
 			{ from: 'public/images', to: 'images' },
+			{ from: 'public/vendor', to: 'images' },
 			// { from: 'public/manifest.json', to: '.' },
 		]),
 		new webpack.HotModuleReplacementPlugin(),

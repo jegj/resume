@@ -2,11 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Hello } from './test';
 
-ReactDOM.render(
-  <Hello />,
-  document.getElementById('root')
-);
-
 const render = (Component) => {
   ReactDOM.render(
     <Component />,

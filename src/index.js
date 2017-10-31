@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Hello } from './test';
+import { App } from './components/app';
 
 const render = (Component) => {
-  ReactDOM.render(
-    <Component />,
-    document.getElementById('root')
-  );
+	ReactDOM.render(
+		<Component />,
+		document.getElementById('page-top')
+	);
 };
 
-render(Hello)
+render(App)
 
 // Hot Module Replacement API
 if (module.hot) {
-  module.hot.accept('./test', () => {
-    render(Hello)
-  });
+	module.hot.accept('./components/app', () => {
+		render(App)
+	});
 }

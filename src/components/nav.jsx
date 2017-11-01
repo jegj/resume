@@ -4,13 +4,14 @@ export class Nav extends React.Component {
 
 	constructor(props) {
 		super(props);
+		console.log(props)
 		this.state = {
 			locale: props.locale || 'es'
 		}
 	}
 
 	componentWillMount() {
-		
+		// console.log(props)
 	}
 
 	render() {

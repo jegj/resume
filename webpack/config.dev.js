@@ -52,6 +52,7 @@ const config = {
 			// { from: 'public/manifest.json', to: '.' },
 		]),
 		new webpack.HotModuleReplacementPlugin(),
-	]
+	],
+	devtool: 'source-map'
 };
 module.exports = config

@@ -1,7 +1,7 @@
 {
   "name": "resume",
   "version": "1.0.0",
-  "description": "Personal resume",
+  "description": "Personal resume for jegj :)",
   "main": "index.js",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --hot --env=dev --colors",
@@ -38,8 +38,10 @@
     "webpack-dev-server": "^2.9.3"
   },
   "dependencies": {
+    "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-redux": "^5.0.6"
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
   }
 }

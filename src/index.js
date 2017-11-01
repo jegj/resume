@@ -1,19 +1,46 @@
+
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { App } from './components/app';
+import { render as reactRender}  from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import App from './containers/App';
+import reducer from './reducers';
 
-const render = (Component) => {
-	ReactDOM.render(
-		<Component />,
-		document.getElementById('page-top')
-	);
-};
+const store = createStore(reducer);
 
-render(App)
+const rootEl = document.getElementById("root");
 
-// Hot Module Replacement API
+let render = () => (
+	reactRender(
+		<Provider store={store}>
+			<App />
+		</Provider>,
+		rootEl
+	)
+);
+
 if (module.hot) {
-	module.hot.accept('./components/app', () => {
-		render(App)
+	const renderApp = render;
+	const renderError = (error) => {
+		const RedBox = require("redbox-react");
+		reactRender(
+			<RedBox error={error} />,
+			rootEl,
+		);
+	};
+
+	render = () => {
+		try {
+			renderApp();
+		}
+		catch (error) {
+			renderError(error);
+		}
+	};
+
+	module.hot.accept("./containers/App", () => {
+		setTimeout(render);
 	});
 }
+
+render();

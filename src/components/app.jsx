@@ -4,7 +4,7 @@ import { Nav } from './nav';
 export class App extends React.Component {
 
 	constructor() {
-		
+		super();
 	}
 
 	render() {

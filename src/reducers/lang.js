@@ -9,7 +9,7 @@ export default function lang(state = initialState, action) {
 		case CHANGE_LANGUAGE: 
 			return {
 				...state,
-				...{ code: action.langcode }
+				...{ code: action.code }
 			};
 		default:
 			return state;

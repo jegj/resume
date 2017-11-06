@@ -38,6 +38,14 @@ export class Nav extends React.Component {
 		)
 	}
 
+	handleAnchorClick(anchor, event) {
+		// event.prevenDefault();
+		if ($('.navbar-toggler').css('display') != 'none') {
+			$(".navbar-toggler").trigger("click");
+		}
+		location.href = anchor;
+	}
+
 	handleI18NClick(nextLang) {
 		// FIXME: REMOVE JQUERY CODE 
 		if ($('.navbar-toggler').css('display') != 'none') {
@@ -86,12 +94,12 @@ export class Nav extends React.Component {
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav">
 						<li className="nav-item">
-							<a className={"nav-link js-scroll-trigger " + animation } href="#about">
+							<a className={"nav-link js-scroll-trigger " + animation} href="#about" onClick={(e) => this.handleAnchorClick('#about', e)}>
 								<Translate value="nav.section.about" />
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className={"nav-link js-scroll-trigger " + animation} href="#experience">
+							<a className={"nav-link js-scroll-trigger " + animation} href="#experience" onClick={(e) => this.handleAnchorClick('#experience', e)}>
 								<Translate value="nav.section.experience" />
 							</a>
 						</li>

@@ -1,14 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
-import { Nav } from '../components/nav'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { Nav } from '../components/nav';
+import { About } from '../components/about';
 // import MainSection from '../components/MainSection'
 import * as resumeActions from '../actions'
 
 const App = ({ language, actions }) => (
 	<div>
 		<Nav language={language} changeLanguage={actions.changeLanguage} />
+		<About/>
 	</div>
 );
 

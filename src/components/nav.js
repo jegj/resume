@@ -55,7 +55,9 @@ export class Nav extends React.Component {
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link js-scroll-trigger" href="#experience">Experience</a>
+							<a className="nav-link js-scroll-trigger" href="#experience">
+								<Translate value="nav.section.experience" />
+							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link js-scroll-trigger" href="#education">Education</a>

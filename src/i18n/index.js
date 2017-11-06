@@ -3,7 +3,8 @@ module.exports = {
 		nav : {
 			title: 'jegj\'s resume',
 			section: {
-				about: 'Acerca de mi'
+				about: 'Acerca de mi',
+				experience: 'Experencia'
 			}
 		}
 	},
@@ -11,7 +12,8 @@ module.exports = {
 		nav: {
 			title: 'jegj\'s resume',
 			section: {
-				about: 'About'
+				about: 'About',
+				experience: 'Experience'
 			}
 		}
 	}

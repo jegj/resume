@@ -13,8 +13,9 @@ export const About = ({}) => {
 					<div className="subheading mb-5">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
 						<a href="mailto:name@email.com">test@gmail.com</a>
 					</div>
-					<p className="mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
-						to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+					<p className="mb-5 animated fadeIn">
+						<Translate value="about.description" />
+					</p>
 					<ul className="list-inline list-social-icons mb-0">
 						<li className="list-inline-item">
 							<a href="#">

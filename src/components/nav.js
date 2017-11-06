@@ -2,6 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Translate } from 'react-redux-i18n';
 export class Nav extends React.Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			animation: 'hidden'
+		};
+	}
 	
 	renderI18nButton() {
 		const { language } = this.props;
@@ -25,13 +32,42 @@ export class Nav extends React.Component {
 				nextLang = 'EN';
 		}
 		return (
-			<a href="#" title={title} onClick={() => this.props.changeLanguage(nextLang)}>
+			<a href="#" title={title} onClick={() => this.handleI18NClick(nextLang)}>
 				{flag}
 			</a>
 		)
 	}
 
+	handleI18NClick(nextLang) {
+		// FIXME: REMOVE JQUERY CODE 
+		if ($('.navbar-toggler').css('display') != 'none') {
+			$(".navbar-toggler").trigger("click");
+		}
+		this.props.changeLanguage(nextLang);
+	}
+
+	componentWillReceiveProps() {
+		this.toogleAnimation();
+	}
+
+	componentDidMount() {
+		this.toogleAnimation();
+	}
+
+	toogleAnimation() {
+		this.setState({
+			animation: 'animated fadeIn'
+		}, () => {
+			setTimeout(() => {
+				this.setState({
+					animation: ''
+				});
+			}, 500);
+		});
+	}
+
 	render() {
+		const { animation } = this.state;
 		const i18nButton = this.renderI18nButton();
 		return (
 			<nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -50,26 +86,34 @@ export class Nav extends React.Component {
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav">
 						<li className="nav-item">
-							<a className="nav-link js-scroll-trigger" href="#about">
+							<a className={"nav-link js-scroll-trigger " + animation } href="#about">
 								<Translate value="nav.section.about" />
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link js-scroll-trigger" href="#experience">
+							<a className={"nav-link js-scroll-trigger " + animation} href="#experience">
 								<Translate value="nav.section.experience" />
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link js-scroll-trigger" href="#education">Education</a>
+							<a className={"nav-link js-scroll-trigger " + animation} href="#education">
+								<Translate value="nav.section.education" />
+							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link js-scroll-trigger" href="#skills">Skills</a>
+							<a  className={"nav-link js-scroll-trigger " + animation} href="#skills">
+								<Translate value="nav.section.skills" />
+							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link js-scroll-trigger" href="#interests">Interests</a>
+							<a className={"nav-link js-scroll-trigger " + animation} href="#projects">
+								<Translate value="nav.section.projects" />
+							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link js-scroll-trigger" href="#awards">Awards</a>
+							<a  className={"nav-link js-scroll-trigger " + animation} href="#interests">
+								<Translate value="nav.section.interests" />
+							</a>
 						</li>
 						<li className="nav-item">
 							{i18nButton}

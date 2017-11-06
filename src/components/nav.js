@@ -1,24 +1,44 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
+import { Translate } from 'react-redux-i18n';
 export class Nav extends React.Component {
-
-	constructor(props) {
-		super(props);
-		console.log(props)
-		this.state = {
-			locale: props.locale || 'es'
+	
+	renderI18nButton() {
+		const { language } = this.props;
+		let flag = null;
+		let nextLang = null;
+		let title = null;
+		switch ( language ) {
+			case 'ES':
+				flag = <img src="images/usa_flag.png" alt="english" width="30px" height="30px" />;
+				nextLang = 'EN';
+				title = 'English';
+				break;
+			case 'EN':
+				flag = <img src="images/spain_flag.png" alt="español" width="30px" height="30px" />;
+				title = 'Español';
+				nextLang = 'ES';
+				break;
+			default:
+				flag = <img src="images/usa_flag.png" alt="english" width="30px" height="30px" />;
+				title = 'English';
+				nextLang = 'EN';
 		}
-	}
-
-	componentWillMount() {
-		// console.log(props)
+		return (
+			<a href="#" title={title} onClick={() => this.props.changeLanguage(nextLang)}>
+				{flag}
+			</a>
+		)
 	}
 
 	render() {
+		const i18nButton = this.renderI18nButton();
 		return (
 			<nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
 				<a className="navbar-brand js-scroll-trigger" href="#page-top">
-					<span className="d-block d-lg-none">Jegj's Resume</span>
+					<span className="d-block d-lg-none">
+						<Translate value="nav.title"/>
+					</span>
 					<span className="d-none d-lg-block">
 						<img className="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile.jpg" alt=""/>
 					</span>
@@ -30,7 +50,9 @@ export class Nav extends React.Component {
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav">
 						<li className="nav-item">
-							<a className="nav-link js-scroll-trigger" href="#about">About</a>
+							<a className="nav-link js-scroll-trigger" href="#about">
+								<Translate value="nav.section.about" />
+							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link js-scroll-trigger" href="#experience">Experience</a>
@@ -48,13 +70,16 @@ export class Nav extends React.Component {
 							<a className="nav-link js-scroll-trigger" href="#awards">Awards</a>
 						</li>
 						<li className="nav-item">
-							<a href="#" title="">
-								<img src="images/usa_flag.png" alt="english" width="30px" height="30px"/>
-							</a>
+							{i18nButton}
 						</li>
 					</ul>
 				</div>
 			</nav>
 		);
 	}
+};
+
+Nav.propTypes = {
+	language: PropTypes.string.isRequired,
+	changeLanguage: PropTypes.func.isRequired,
 };

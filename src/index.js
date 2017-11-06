@@ -1,12 +1,19 @@
 
 import React from 'react';
+import thunk from 'redux-thunk';
 import { render as reactRender}  from 'react-dom';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+import { loadTranslations, setLocale, syncTranslationWithStore } from 'react-redux-i18n';
+import translationsObject  from './i18n';
 import App from './containers/App';
 import reducer from './reducers';
 
-const store = createStore(reducer);
+const store = createStore(reducer, applyMiddleware(thunk));
+
+syncTranslationWithStore(store);
+store.dispatch(loadTranslations(translationsObject));
+store.dispatch(setLocale('ES'));
 
 const rootEl = document.getElementById("root");
 

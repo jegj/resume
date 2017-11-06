@@ -13,12 +13,12 @@ const App = ({ language, actions }) => (
 );
 
 App.propTypes = {
-	language: PropTypes.object.isRequired,
+	language: PropTypes.string.isRequired,
 	actions: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
-	language: state.language
+	language: state.i18n.locale
 });
 
 const mapDispatchToProps = dispatch => ({

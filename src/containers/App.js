@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Nav } from '../components/nav';
 import { About } from '../components/about';
+import { Experience } from '../components/experience';
 // import MainSection from '../components/MainSection'
 import * as resumeActions from '../actions'
 
@@ -11,6 +12,7 @@ const App = ({ language, actions }) => (
 	<div>
 		<Nav language={language} changeLanguage={actions.changeLanguage} />
 		<About/>
+		<Experience/>
 	</div>
 );
 

@@ -14,6 +14,15 @@ module.exports = {
 		},
 		about: {
 			description: 'Soy un texto en español bla bla bla . frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster'
+		},
+		skills: {
+			title: 'Habilidades',
+			tools: 'Lenguajes de Programación &amp; Herramientas',
+			flow: 'Flujo de trabajo',
+			devops: 'Integración Continua &amp; DevOps',
+			responsive: 'Mobile-First, Diseño Responsivo',
+			debug: 'Pruebas y Depuración en multiples navegadores',
+			agile: 'Desarrollo ágil(Scrum, XP)'
 		}
 	},
 	EN : {
@@ -31,6 +40,15 @@ module.exports = {
 		},
 		about: {
 			description: 'I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.'
+		},
+		skills: {
+			title: 'Skills',
+			tools: 'Programming Languages &amp; Tools',
+			flow: 'WorkFlow',
+			devops: 'Continous Integration &amp; DevOps',
+			responsive: 'Mobile-First, Responsive Design',
+			debug: 'Cross Browser Testing &amp; Debugging',
+			agile: 'Agile Development(Scrum, XP)'
 		}
 	}
 }

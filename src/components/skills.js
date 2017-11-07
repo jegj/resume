@@ -7,103 +7,107 @@ export const Skills = ({ }) => {
 		<ScrollableAnchor id="skills">
 			<section className="resume-section p-3 p-lg-5 d-flex flex-column">
 				<div className="my-aauto">
-					<h2 className="mb-5">Skills</h2>
+					<h2 className="mb-5"><Translate value="skills.title" /></h2>
 
-					<div className="subheading mb-3">Programming Languages &amp; Tools</div>
+					<div className="subheading mb-3">
+						<Translate value="skills.tools" 	 />
+					</div>
 					<ul className="list-inline list-icons">
 						<li className="list-inline-item" title="HTML5">
 							<i className="devicon-html5-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="CSS3">
-							<i class="devicon-css3-plain colored"></i>
+							<i className="devicon-css3-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="Bootstrap">
-							<i class="devicon-bootstrap-plain colored"></i>
+							<i className="devicon-bootstrap-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="Javascript">
-							<i class="devicon-javascript-plain colored"></i>
+							<i className="devicon-javascript-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="React">
-							<i class="devicon-react-original colored"></i>
+							<i className="devicon-react-original colored"></i>
 						</li>
 						<li className="list-inline-item" title="Jquery">
-							<i class="devicon-jquery-plain colored"></i>
+							<i className="devicon-jquery-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="Webpack">
-							<i class="devicon-webpack-plain colored"></i>
+							<i className="devicon-webpack-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="babel">
-							<i class="devicon-babel-plain colored"></i>
+							<i className="devicon-babel-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="Node JS">
-							<i class="devicon-nodejs-plain colored"></i>
+							<i className="devicon-nodejs-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="Express">
-							<i class="devicon-express-original colored"></i>
+							<i className="devicon-express-original colored"></i>
 						</li>
 						<li className="list-inline-item" title="Python">
-							<i class="devicon-python-plain colored"></i>
+							<i className="devicon-python-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="Django">
-							<i class="devicon-django-plain colored"></i>
+							<i className="devicon-django-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="Postgres SQL">
-							<i class="devicon-postgresql-plain colored"></i>
+							<i className="devicon-postgresql-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="Mongo DB">
-							<i class="devicon-mongodb-plain colored"></i>
+							<i className="devicon-mongodb-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="Mocha">
-							<i class="devicon-mocha-plain colored"></i>
+							<i className="devicon-mocha-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="Travis">
-							<i class="devicon-travis-plain colored"></i>
+							<i className="devicon-travis-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="Heroku">
-							<i class="devicon-heroku-original colored"></i>
+							<i className="devicon-heroku-original colored"></i>
 						</li>
 						<li className="list-inline-item" title="Amaazon Web Services">
-							<i class="devicon-amazonwebservices-original colored"></i>
+							<i className="devicon-amazonwebservices-original colored"></i>
 						</li>
 						<li className="list-inline-item" title="GIT">
-							<i class="devicon-git-plain colored"></i>
+							<i className="devicon-git-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="GitHub">
-							<i class="devicon-github-plain colored"></i>
+							<i className="devicon-github-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="Slack">
-							<i class="devicon-slack-plain colored"></i>
+							<i className="devicon-slack-plain colored"></i>
 						</li>
 						<li className="list-inline-item" title="Linux">
-							<i class="devicon-linux-plain colored"></i>
+							<i className="devicon-linux-plain colored"></i>
 						</li>
 					</ul>
 
-					<div className="subheading mb-3">Workflow</div>
+					<div className="subheading mb-3">
+						<Translate value="skills.flow" />
+					</div>
 					<ul className="fa-ul mb-0">
 						<li>
 							<i className="fa-li fa fa-check"></i>
-							Mobile-First, Responsive Design
+							<Translate value="skills.responsive" />
 						</li>
 						<li>
 							<i className="fa-li fa fa-check"></i>
-							Progressive Web Apps
+							Progressive Web Apps(PWA)
 						</li>
 						<li>
 							<i className="fa-li fa fa-check"></i>
-							Single Page Applications
+							Single Page Applications(SPA)
 						</li>
 						<li>
 							<i className="fa-li fa fa-check"></i>
-							Cross Browser Testing &amp; Debugging
+							<Translate value="skills.debug" />
 						</li>
 						<li>
 							<i className="fa-li fa fa-check"></i>
-							Cross Functional Teams
+							<Translate value="skills.devops" dangerousHTML/>
 						</li>
 						<li>
 							<i className="fa-li fa fa-check"></i>
-							Agile Development &amp; Scrum
+							<Translate value="skills.agile" dangerousHTML />
 						</li>
 					</ul>
 				</div>

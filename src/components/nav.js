@@ -124,11 +124,6 @@ export class Nav extends React.Component {
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className={"nav-link js-scroll-trigger " + animation} href="#contact">
-								<Translate value="nav.section.contact" />
-							</a>
-						</li>
-						<li className="nav-item">
 							{i18nButton}
 						</li>
 					</ul>

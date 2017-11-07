@@ -114,13 +114,18 @@ export class Nav extends React.Component {
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className={"nav-link js-scroll-trigger " + animation} href="#projects" onClick={(e) => this.handleAnchorClick('#interests')}>
+							<a className={"nav-link js-scroll-trigger " + animation} href="#projects" onClick={(e) => this.handleAnchorClick('#projects')}>
 								<Translate value="nav.section.projects" />
 							</a>
 						</li>
 						<li className="nav-item">
-							<a  className={"nav-link js-scroll-trigger " + animation} href="#interests">
+							<a className={"nav-link js-scroll-trigger " + animation} href="#interests" onClick={(e) => this.handleAnchorClick('#interests')}>
 								<Translate value="nav.section.interests" />
+							</a>
+						</li>
+						<li className="nav-item">
+							<a className={"nav-link js-scroll-trigger " + animation} href="#contact">
+								<Translate value="nav.section.contact" />
 							</a>
 						</li>
 						<li className="nav-item">

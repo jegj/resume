@@ -6,7 +6,7 @@ export const Education = ({ }) => {
 	return (
 		<ScrollableAnchor id="education">
 			<section className="resume-section p-3 p-lg-5 d-flex flex-column">
-				<div className="my-auto">
+				<div className="my-aauto">
 					<h2 className="mb-5">Education</h2>
 
 					<div className="resume-item d-flex flex-column flex-md-row mb-5">

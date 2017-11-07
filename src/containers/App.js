@@ -8,7 +8,7 @@ import { Experience } from '../components/experience';
 import { Education } from '../components/education';
 import { Skills } from '../components/skills';
 import { Interests } from '../components/interests';
-// import MainSection from '../components/MainSection'
+import { Projects } from '../components/projects';
 import * as resumeActions from '../actions'
 
 const App = ({ language, actions }) => (
@@ -18,6 +18,7 @@ const App = ({ language, actions }) => (
 		<Experience/>
 		<Education/>
 		<Skills/>
+		<Projects/>
 		<Interests/>
 	</div>
 );

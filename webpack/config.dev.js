@@ -16,7 +16,6 @@ const config = {
 		contentBase: path.resolve(__dirname, '../public'),
 		host: '0.0.0.0',
 		port: 9000,
-		hot: true,
 		inline: true,
 	},
 	module: {
@@ -37,6 +36,7 @@ const config = {
 		filename: 'js/bundle.js'
 	},
 	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, '../public/index.html'),
 			hash: true,
@@ -50,8 +50,7 @@ const config = {
 			{ from: 'public/images', to: 'images' },
 			{ from: 'public/vendor', to: 'images' },
 			// { from: 'public/manifest.json', to: '.' },
-		]),
-		new webpack.HotModuleReplacementPlugin(),
+		])
 	],
 	devtool: 'source-map'
 };

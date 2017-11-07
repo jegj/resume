@@ -8,7 +8,8 @@ module.exports = {
 				education: 'Educación',
 				skills: 'Habilidades',
 				interests: 'Intereses',
-				projects: 'Proyectos'
+				projects: 'Proyectos',
+				contact: 'Contacto'
 			},
 		},
 		about: {
@@ -24,7 +25,8 @@ module.exports = {
 				education: 'Education',
 				skills: 'Skills',
 				interests: 'Interests',
-				projects: 'Projects'
+				projects: 'Projects',
+				contact: 'Contact'
 			},
 		},
 		about: {

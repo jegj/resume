@@ -4,7 +4,7 @@
   "description": "Personal resume for jegj :)",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --hot --env=dev --colors",
+    "start": "node_modules/.bin/webpack-dev-server  --env=dev --colors",
     "test": "node_modules/.bin/mocha --require babel-core/register  \"./src/**/*.spec.js\" --colors"
   },
   "repository": {

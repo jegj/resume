@@ -5,6 +5,9 @@ import { connect } from 'react-redux';
 import { Nav } from '../components/nav';
 import { About } from '../components/about';
 import { Experience } from '../components/experience';
+import { Education } from '../components/education';
+import { Skills } from '../components/skills';
+import { Interests } from '../components/interests';
 // import MainSection from '../components/MainSection'
 import * as resumeActions from '../actions'
 
@@ -13,6 +16,9 @@ const App = ({ language, actions }) => (
 		<Nav language={language} changeLanguage={actions.changeLanguage} />
 		<About/>
 		<Experience/>
+		<Education/>
+		<Skills/>
+		<Interests/>
 	</div>
 );
 

@@ -32,14 +32,13 @@ export class Nav extends React.Component {
 				nextLang = 'EN';
 		}
 		return (
-			<a href="#" title={title} onClick={() => this.handleI18NClick(nextLang)}>
+			<a href="javascript:void(0);" title={title} onClick={(e) => this.handleI18NClick(nextLang, e)}>
 				{flag}
 			</a>
 		)
 	}
 
-	handleAnchorClick(anchor, event) {
-		// event.prevenDefault();
+	handleAnchorClick(anchor) {
 		if ($('.navbar-toggler').css('display') != 'none') {
 			$(".navbar-toggler").trigger("click");
 		}
@@ -47,6 +46,7 @@ export class Nav extends React.Component {
 	}
 
 	handleI18NClick(nextLang) {
+
 		// FIXME: REMOVE JQUERY CODE 
 		if ($('.navbar-toggler').css('display') != 'none') {
 			$(".navbar-toggler").trigger("click");
@@ -94,27 +94,27 @@ export class Nav extends React.Component {
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav">
 						<li className="nav-item">
-							<a className={"nav-link js-scroll-trigger " + animation} href="#about" onClick={(e) => this.handleAnchorClick('#about', e)}>
+							<a className={"nav-link js-scroll-trigger " + animation} href="#about" onClick={(e) => this.handleAnchorClick('#about')}>
 								<Translate value="nav.section.about" />
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className={"nav-link js-scroll-trigger " + animation} href="#experience" onClick={(e) => this.handleAnchorClick('#experience', e)}>
+							<a className={"nav-link js-scroll-trigger " + animation} href="#experience" onClick={(e) => this.handleAnchorClick('#experience')}>
 								<Translate value="nav.section.experience" />
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className={"nav-link js-scroll-trigger " + animation} href="#education">
+							<a className={"nav-link js-scroll-trigger " + animation} href="#education" onClick={(e) => this.handleAnchorClick('#education')}>
 								<Translate value="nav.section.education" />
 							</a>
 						</li>
 						<li className="nav-item">
-							<a  className={"nav-link js-scroll-trigger " + animation} href="#skills">
+							<a className={"nav-link js-scroll-trigger " + animation} href="#skills" onClick={(e) => this.handleAnchorClick('#skills')}>
 								<Translate value="nav.section.skills" />
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className={"nav-link js-scroll-trigger " + animation} href="#projects">
+							<a className={"nav-link js-scroll-trigger " + animation} href="#projects" onClick={(e) => this.handleAnchorClick('#interests')}>
 								<Translate value="nav.section.projects" />
 							</a>
 						</li>

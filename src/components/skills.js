@@ -36,7 +36,7 @@ export class Skills extends React.Component {
 		return (
 			<ScrollableAnchor id="skills">
 				<section className="resume-section p-3 p-lg-5 d-flex flex-column">
-					<div className="my-aauto">
+					<div>
 						<h2 className="mb-5"><Translate className={animation} value="skills.title" /></h2>
 
 						<div className="subheading mb-3">

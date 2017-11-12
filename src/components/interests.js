@@ -6,7 +6,7 @@ export const Interests = ({ }) => {
 	return (
 		<ScrollableAnchor id="interests">
 			<section className="resume-section p-3 p-lg-5 d-flex flex-column">
-				<div className="my-auto">
+				<div className="my-aauto">
 					<h2 className="mb-5">Interests</h2>
 					<p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice
 						ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>

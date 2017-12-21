@@ -42,7 +42,7 @@ export class About extends React.Component {
 						<div className="subheading mb-5">
 							<span>Jiron 28 de Julio # 283 · Magdalena del Mar · Perú </span>
 							<br/>
-							<a href="mailto:name@email.com">jegj57@gmail.com</a>
+							<a href="mailto:jegj57@gmail.com">jegj57@gmail.com</a>
 						</div>
 						<p className="mb-5 about-description">
 							<Translate className={animation} value="about.description" />

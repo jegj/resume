@@ -13,7 +13,7 @@ module.exports = {
 			},
 		},
 		about: {
-			description: 'Soy un texto en español bla bla bla . frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster'
+			description: 'Full Stack Web Developer, especializado en Python y Javascript con mucho interes en el desarrollo de aplicaciones web y moviles. Gran entusiasta de las Bases de datos NoSQL, PWA(Progressive Web Apps) y las SPA (Single Page Apps). Fascinado por la algoritmia, las estructuras de datos y mejorar el rendimiento/optimización de las aplicaciones.',
 		},
 		skills: {
 			title: 'Habilidades',
@@ -39,7 +39,7 @@ module.exports = {
 			},
 		},
 		about: {
-			description: 'I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.'
+			description: 'Python/Javascript Full Stack Web Developer, wih interest in web/mobile application development and NoSQL Databases. Believer of Agile Development and Lean startups also i\'m big Progressive Web Apps(PWA) and Single Page Application(SPA) enthusiast. Fascinated with software engineer\'s performance and optimization and computer science, algorithms and data structures.'
 		},
 		skills: {
 			title: 'Skills',

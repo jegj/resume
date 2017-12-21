@@ -91,6 +91,9 @@ export class Skills extends React.Component {
 							<li className="list-inline-item" title="Travis">
 								<i className="devicon-travis-plain colored"></i>
 							</li>
+							<li className="list-inline-item" title="Nginx">
+								<i className="devicon-nginx-original colored"></i>
+							</li>
 							<li className="list-inline-item" title="Heroku">
 								<i className="devicon-heroku-original colored"></i>
 							</li>

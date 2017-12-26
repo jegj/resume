@@ -39,17 +39,19 @@ export class Nav extends React.Component {
 	}
 
 	handleAnchorClick(anchor) {
-		if ($('.navbar-toggler').css('display') != 'none') {
-			$(".navbar-toggler").trigger("click");
+		const navbar = document.querySelector('.navbar-toggler');
+		const display = getComputedStyle(navbar, null).display;
+		if (display != 'none') {
+			navbar.click();
 		}
 		location.href = anchor;
 	}
 
 	handleI18NClick(nextLang) {
-
-		// FIXME: REMOVE JQUERY CODE 
-		if ($('.navbar-toggler').css('display') != 'none') {
-			$(".navbar-toggler").trigger("click");
+		const navbar = document.querySelector('.navbar-toggler');
+		const display = getComputedStyle(navbar, null).display;
+		if ( display != 'none') {
+			navbar.click();
 		}
 		this.props.changeLanguage(nextLang);
 	}

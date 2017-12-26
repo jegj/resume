@@ -37,6 +37,11 @@ module.exports = {
 			responsive: 'Mobile-First, Diseño Responsivo',
 			debug: 'Pruebas y Depuración en multiples navegadores',
 			agile: 'Desarrollo ágil(Scrum, XP)'
+		},
+		interests: {
+			title: 'Intereses',
+			0: 'Videojuegos',
+			1: 'Fútbol',
 		}
 	},
 	EN : {
@@ -77,6 +82,12 @@ module.exports = {
 			responsive: 'Mobile-First, Responsive Design',
 			debug: 'Cross Browser Testing &amp; Debugging',
 			agile: 'Agile Development(Scrum, XP)'
+		},
+		interests: {
+			title: 'Interests',
+			0: 'VideoGames',
+			1: 'Soccer',
+			2: 'Animals'
 		}
 	}
 }

@@ -73,6 +73,25 @@ body {
   line-height: 5.5rem;
   color: var(--color-grey-dark-4); }
 
+.secondary-typography {
+  font-family: 'Saira Extra Condensed', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 5.5rem;
+  color: var(--color-grey-dark-4); }
+
+.tertiary-typography {
+  font-family: 'Saira Extra Condensed', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 5.5rem;
+  color: var(--color-grey-dark-4); }
+
+.typography-description {
+  font-size: 2rem;
+  color: var(--color-grey-dark-4);
+  text-align: justify; }
+
 .color--text-primary {
   color: var(--color-primary-dark); }
 
@@ -107,11 +126,6 @@ body {
 
 .about {
   padding: 3rem 3rem 0 3rem; }
-  .about__description {
-    font-size: 2rem;
-    color: var(--color-grey-dark-4);
-    text-align: justify;
-    padding: 2rem 0; }
   .about__email:link, .about__email:visited {
     font-size: 2rem;
     cursor: pointer;
@@ -129,3 +143,5 @@ body {
 
 .experience {
   padding: 3rem 3rem 0 3rem; }
+  .experience__entry {
+    padding: 2rem 0; }

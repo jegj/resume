@@ -8,6 +8,29 @@
 	color: var(--color-grey-dark-4);
 }
 
+.secondary-typography {
+	font-family: 'Saira Extra Condensed', serif;
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 5.5rem;
+	color: var(--color-grey-dark-4);
+}
+
+.tertiary-typography{
+	font-family: 'Saira Extra Condensed', serif;
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 5.5rem;
+	color: var(--color-grey-dark-4);
+}
+
+.typography-description {
+	font-size: 2rem;
+	color: var(--color-grey-dark-4);
+	text-align: justify;
+	// padding: 2rem 0;
+}
+
 .color--text-primary {
 	color: var(--color-primary-dark);
 }
@@ -66,13 +89,6 @@
 .about {
 	padding: 3rem 3rem 0 3rem;
 
-	&__description {
-		font-size: 2rem;
-		color: var(--color-grey-dark-4);
-		text-align: justify;
-		padding: 2rem 0;
-	}
-
 	&__email:link, &__email:visited {
 		font-size: 2rem;
 		cursor: pointer;
@@ -97,7 +113,10 @@
 }
 
 ////////////////////////////////////////
-// ABOUT
+// EXPERIENCE
 .experience {
 	padding: 3rem 3rem 0 3rem;
+	&__entry {
+		padding: 2rem 0;
+	}
 }

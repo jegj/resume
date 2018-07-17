@@ -12,6 +12,10 @@
 	color: var(--color-primary-dark);
 }
 
+.language__link {
+
+}
+
 ////////////////////////////////////////
 // LOGO
 .logo {
@@ -29,22 +33,22 @@
 ////////////////////////////////////////
 // SIDE NAVIGATION
 .side-nav {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	list-style: none;
 	margin-top: 3.5rem;
 	text-align: center;
 
-	&__item {
-
-	}
-
 	&__link:link,
 	&__link:visited {
-		color: #fff;
+		color: var(--color-grey-light-3);
 		text-decoration: none;
 		text-transform: uppercase;
-		padding: 1.5rem 3rem;
+		padding: 1rem 3rem;
 		display: block;
+	}
+
+	&__link:hover {
+		color: var(--color-grey-light-1);
 	}
 }
 
@@ -60,18 +64,40 @@
 ////////////////////////////////////////
 // ABOUT
 .about {
-	padding: 5rem;
+	padding: 3rem 3rem 0 3rem;
+
+	&__description {
+		font-size: 2rem;
+		color: var(--color-grey-dark-4);
+		text-align: justify;
+		padding: 2rem 0;
+	}
+
+	&__email:link, &__email:visited {
+		font-size: 2rem;
+		cursor: pointer;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	&__connections {
+		padding: 1.5rem 0;
+	}
+
+	&__link:link, &__link:visited {
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	&__icon {
+		height: 3rem;
+		width: 3rem;
+		margin-right: 2rem;
+	}
 }
 
-.about__description {
-	font-size: 2rem;
-	color: var(--color-grey-dark-4);
-	text-align: justify;
-}
-
-.email:link, .email:visited {
-	font-size: 2rem;
-	cursor: pointer;
-	text-transform: uppercase;
-	text-decoration: none;
+////////////////////////////////////////
+// ABOUT
+.experience {
+	padding: 3rem 3rem 0 3rem;
 }

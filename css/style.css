@@ -43,7 +43,8 @@ body {
   padding: 1.8rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .content {
   display: flex; }
@@ -56,13 +57,13 @@ body {
   justify-content: space-between;
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)); }
 
-.hotel-view {
+.main-view {
   background-color: #fff;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100vh; }
+  height: 100vh;
+  overflow-y: scroll; }
 
 .main-typography {
   font-family: 'Saira Extra Condensed', serif;
@@ -85,16 +86,18 @@ body {
   width: 20rem; }
 
 .side-nav {
-  font-size: 2rem;
+  font-size: 1.8rem;
   list-style: none;
   margin-top: 3.5rem;
   text-align: center; }
   .side-nav__link:link, .side-nav__link:visited {
-    color: #fff;
+    color: var(--color-grey-light-3);
     text-decoration: none;
     text-transform: uppercase;
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
     display: block; }
+  .side-nav__link:hover {
+    color: var(--color-grey-light-1); }
 
 .legal {
   font-size: 1.8rem;
@@ -103,15 +106,26 @@ body {
   padding: 2.5rem; }
 
 .about {
-  padding: 5rem; }
+  padding: 3rem 3rem 0 3rem; }
+  .about__description {
+    font-size: 2rem;
+    color: var(--color-grey-dark-4);
+    text-align: justify;
+    padding: 2rem 0; }
+  .about__email:link, .about__email:visited {
+    font-size: 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .about__connections {
+    padding: 1.5rem 0; }
+  .about__link:link, .about__link:visited {
+    cursor: pointer;
+    text-decoration: none; }
+  .about__icon {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem; }
 
-.about__description {
-  font-size: 2rem;
-  color: var(--color-grey-dark-4);
-  text-align: justify; }
-
-.email:link, .email:visited {
-  font-size: 2rem;
-  cursor: pointer;
-  text-transform: uppercase;
-  text-decoration: none; }
+.experience {
+  padding: 3rem 3rem 0 3rem; }

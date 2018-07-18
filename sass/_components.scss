@@ -28,7 +28,6 @@
 	font-size: 2rem;
 	color: var(--color-grey-dark-4);
 	text-align: justify;
-	// padding: 2rem 0;
 }
 
 .color--text-primary {
@@ -53,6 +52,52 @@
 	width: 20rem;
 }
 
+.btn-inline {
+	border: none;
+	color: var(--color-primary);
+	font-size: inherit;
+	// border-bottom: 1px solid currentColor;
+	padding-bottom: 2px;
+	display: inline-block;
+	background-color: transparent;
+	cursor: pointer;
+	transition: all .2s;
+
+	& span {
+			margin-left: 3px;
+			transition: margin-left .2s;
+	}
+
+	&:hover {
+			color: var(--color-primary-light);
+			span {
+					margin-left: 8px;
+			}
+	}
+
+	&:focus {
+			outline: none;
+			animation: pulsate 2s;
+	}
+}
+
+@keyframes pulsate {
+	0% {
+		transform: scale(1);
+		box-shadow: none;
+	}
+
+	50% {
+		transform: scale(1.05);
+		box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: none;
+	}
+}
+
 ////////////////////////////////////////
 // SIDE NAVIGATION
 .side-nav {
@@ -68,10 +113,12 @@
 		text-transform: uppercase;
 		padding: 1rem 3rem;
 		display: block;
+		transition: all .2s;
 	}
 
 	&__link:hover {
 		color: var(--color-grey-light-1);
+		transform: scale(1.2);
 	}
 }
 
@@ -79,7 +126,7 @@
 // LEGAL TEXT
 .legal {
 	font-size: 1.8rem;
-	color: var(--color-grey-light-1);
+	color: var(--color-white);
 	text-align: center;
 	padding: 2.5rem;
 }
@@ -87,13 +134,15 @@
 ////////////////////////////////////////
 // ABOUT
 .about {
-	padding: 3rem 3rem 0 3rem;
+	padding: var(--sections-padding);
 
 	&__email:link, &__email:visited {
 		font-size: 2rem;
 		cursor: pointer;
 		text-transform: uppercase;
 		text-decoration: none;
+		padding: 1.5rem 0;
+		margin-top: 1.5rem;
 	}
 
 	&__connections {
@@ -110,13 +159,39 @@
 		width: 3rem;
 		margin-right: 2rem;
 	}
+
+	&__location {
+		padding: 1rem 0;
+		font-size: 1.2rem;
+		display: flex;
+		color: var(--color-primary-dark);
+		vertical-align: center;
+	}
+
+	&__icon-location {
+		height: 2rem;
+		width: 2rem;
+		fill: var(--color-primary-dark);
+	}
 }
 
 ////////////////////////////////////////
 // EXPERIENCE
 .experience {
-	padding: 3rem 3rem 0 3rem;
+	padding: var(--sections-padding);
+
 	&__entry {
 		padding: 2rem 0;
+	}
+
+	&__subtitle {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__date {
+		font-size: 1.8rem;
+		color: var(--color-primary-dark);
 	}
 }

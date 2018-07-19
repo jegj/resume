@@ -30,13 +30,12 @@
 	text-align: justify;
 }
 
-.color--text-primary {
-	color: var(--color-primary-dark);
+.gradient-typography{
+	background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
-.language__link {
-
-}
 
 ////////////////////////////////////////
 // LOGO
@@ -64,37 +63,15 @@
 	transition: all .2s;
 
 	& span {
-			margin-left: 3px;
-			transition: margin-left .2s;
+		margin-left: 3px;
+		transition: margin-left .2s;
 	}
 
 	&:hover {
-			color: var(--color-primary-light);
-			span {
-					margin-left: 8px;
-			}
-	}
-
-	&:focus {
-			outline: none;
-			animation: pulsate 2s;
-	}
-}
-
-@keyframes pulsate {
-	0% {
-		transform: scale(1);
-		box-shadow: none;
-	}
-
-	50% {
-		transform: scale(1.05);
-		box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
-	}
-
-	100% {
-		transform: scale(1);
-		box-shadow: none;
+		color: var(--color-primary-light);
+		span {
+				margin-left: 8px;
+		}
 	}
 }
 
@@ -186,12 +163,22 @@
 
 	&__subtitle {
 		display: flex;
-		justify-content: space-between;
+		// justify-content: space-between;
 		align-items: center;
+	}
+
+	&__company-name {
+		margin-right: auto;
 	}
 
 	&__date {
 		font-size: 1.8rem;
 		color: var(--color-primary-dark);
 	}
+}
+
+////////////////////////////////////////
+// EDUCATION
+.education {
+	padding: var(--sections-padding);
 }

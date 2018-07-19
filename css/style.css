@@ -94,6 +94,7 @@ body {
 
 .gradient-typography {
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent; }
 

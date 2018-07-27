@@ -68,28 +68,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)); }
-  @media only screen and (max-width: 56.25em) and (min-height: 701px) {
+  @media only screen and (max-width: 56.25em) {
     .sidebar {
-      flex-direction: row;
-      height: 5vh; } }
-  @media only screen and (max-width: 56.25em) and (max-height: 700px) {
-    .sidebar {
-      flex-direction: row;
-      height: 10vh; } }
+      flex-direction: row; } }
 
 .main-view {
   background-color: #fff;
   flex: 1;
   display: flex;
-  flex-direction: column;
-  height: 100vh;
-  overflow-y: scroll; }
-  @media only screen and (max-width: 56.25em) and (min-height: 701px) {
-    .main-view {
-      height: 95vh; } }
-  @media only screen and (max-width: 56.25em) and (max-height: 700px) {
-    .main-view {
-      height: 90vh; } }
+  flex-direction: column; }
 
 .main-typography {
   font-family: 'Saira Extra Condensed', serif;

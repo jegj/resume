@@ -60,6 +60,9 @@
 	border-radius: 50%;
 	border: 1rem solid rgba(255, 255, 255, 0.2);
 	width: 20rem;
+	@media only screen and (max-width: $bp-medium) {
+		display: none;
+	}
 }
 
 .btn-inline {
@@ -94,6 +97,19 @@
 	margin-top: 3.5rem;
 	text-align: center;
 
+	@media only screen and (max-width: $bp-medium) {
+		display: flex;
+		margin: 0;
+		flex: 1;
+	}
+
+
+	&__item {
+		@media only screen and (max-width: $bp-medium) {
+				flex: 1;
+		}
+	}
+
 	&__link:link,
 	&__link:visited {
 		color: var(--color-grey-light-3);
@@ -102,6 +118,12 @@
 		padding: 1rem 3rem;
 		display: block;
 		transition: all .2s;
+
+		@media only screen and (max-width: $bp-medium) {
+			flex: 1;
+			display: flex;
+			padding: 0.5rem 3rem;
+		}
 	}
 
 	&__link:hover {
@@ -117,6 +139,10 @@
 	color: var(--color-white);
 	text-align: center;
 	padding: 2.5rem;
+
+	@media only screen and (max-width: $bp-medium) {
+		display: none;
+	}
 }
 
 ////////////////////////////////////////

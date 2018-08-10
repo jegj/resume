@@ -120,6 +120,33 @@ body {
   margin-top: 1.5rem;
   color: var(--color-primary-light); }
 
+.navigation__button {
+  background-color: white;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  z-index: 2000;
+  text-align: center;
+  cursor: pointer; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: white;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navigation__icon::before {
+    top: -.8rem; }
+  .navigation__icon::after {
+    top: .8rem; }
+
 .logo {
   height: 10.25rem;
   margin-left: 2rem; }
@@ -159,6 +186,9 @@ body {
       display: flex;
       margin: 0;
       flex: 1; } }
+  @media only screen and (max-width: 26.875em) {
+    .side-nav {
+      display: none; } }
   @media only screen and (max-width: 56.25em) {
     .side-nav__item {
       flex: 1; } }

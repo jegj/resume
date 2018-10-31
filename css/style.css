@@ -37,6 +37,14 @@ body {
   line-height: 1.6;
   min-height: 100vh; }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 .container {
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
@@ -193,6 +201,9 @@ body {
         flex: 1;
         display: flex;
         padding: 0.5rem 3rem; } }
+  .side-nav__link--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards; }
   .side-nav__link:hover {
     color: var(--color-grey-light-1);
     transform: scale(1.2); }
@@ -231,7 +242,13 @@ body {
   .about__icon {
     height: 3rem;
     width: 3rem;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    transition: all .2s; }
+    .about__icon:hover {
+      transform: translateY(-3px); }
+    .about__icon--animated {
+      animation: moveInBottom .5s ease-out .75s;
+      animation-fill-mode: backwards; }
   .about__location {
     padding: 1rem 0;
     font-size: 1.2rem;

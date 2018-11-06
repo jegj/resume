@@ -287,28 +287,55 @@
 	font-size: 1.8rem;
 
 	&__container {
+		margin-top: 2rem;
 		display: flex;
+		flex-wrap: wrap;
+		padding: 2rem;
+		align-items: center;
+		@media only screen and (max-width: $bp-small) {
+			flex-direction: column;
+		}
 	}
 
-	&__card {
-		perspective: 150rem;
-		padding: 2rem;
-		margin: 1rem;
-		flex: 1;
-		height: 30rem;
+	&__box {
+		background-color: rgba($color-white, .8);
+		font-size: 1.5rem;
+		padding: 2.5rem;
+		text-align: center;
+		border-radius: 3px;
+		box-shadow: var(--shadow-dark);
+		transition: transform .3s;
+		margin: 1rem 1rem 3rem 1rem;
+		width: 30%;
 
-		&__side {
-			height: 30rem;
-			transition: all .8s ease;
-			position: absolute;
-			top: 0;
-			left: 0;
+		@media only screen and (max-width: $bp-medium) {
+			padding: 2rem;
+		}
+
+		@media only screen and (max-width: $bp-small) {
 			width: 100%;
-			-webkit-backface-visibility: hidden;
-			backface-visibility: hidden;
-			border-radius: 3px;
-			overflow: hidden;
-			box-shadow: 0 1.5rem 4rem rgba(0,0,0 , .15);
+		}
+
+		&__icon {
+			font-size: 6rem;
+			margin-bottom: .5rem;
+			display: inline-block;
+			background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+			-webkit-background-clip: text;
+			color: transparent;
+
+			@media only screen and (max-width: $bp-medium) {
+				margin-bottom: 0;
+			}
+		}
+
+		&:hover {
+			transform: translateY(-1.5rem) scale(1.03);
+		}
+
+		&--animated {
+			animation: moveInBottom .5s ease-out .75s;
+			animation-fill-mode: backwards;
 		}
 	}
 }

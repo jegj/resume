@@ -272,6 +272,22 @@ body {
   .experience__date {
     font-size: 1.8rem;
     color: var(--color-primary-dark); }
+  .experience__company-link, .experience__company-link:visited, .experience__company-link:hover, .experience__company-link:active {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    transition: 0.5s color ease;
+    text-decoration: none;
+    color: var(--color-primary-dark);
+    font-size: 2.5rem; }
+  .experience__company-link:hover {
+    color: var(--color-primary-light); }
+  .experience__company-link.before:before, .experience__company-link.after:after {
+    content: "";
+    transition: 0.5s all ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute; }
 
 .projects {
   padding: var(--sections-padding);

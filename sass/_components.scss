@@ -278,6 +278,28 @@
 		font-size: 1.8rem;
 		color: var(--color-primary-dark);
 	}
+
+	&__company-link, &__company-link:visited, &__company-link:hover, &__company-link:active {
+		-webkit-backface-visibility:hidden;
+						backface-visibility:hidden;
+		position:relative;
+		transition:0.5s color ease;
+		text-decoration:none;
+		color:var(--color-primary-dark);
+		font-size:2.5rem;
+	}
+
+	&__company-link:hover {
+		color: var(--color-primary-light)
+	}
+
+	&__company-link.before:before,&__company-link.after:after {
+		content: "";
+		transition:0.5s all ease;
+		-webkit-backface-visibility:hidden;
+						backface-visibility:hidden;
+		position:absolute;
+	}
 }
 
 ////////////////////////////////////////

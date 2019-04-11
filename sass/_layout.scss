@@ -21,9 +21,10 @@
 
 .content {
 	display: flex;
-
+	height: 100vh;
 	@media only screen and (max-width: $bp-medium) {
 		flex-direction: column;
+		height: inherit;
 	}
 }
 
@@ -36,6 +37,7 @@
 	background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
 	@media only screen and (max-width: $bp-medium) {
 		flex-direction: row;
+		display: none;
 	}
 }
 
@@ -45,6 +47,8 @@
 	flex: 1;
 	display: flex;
 	flex-direction: column;
+	overflow: auto;
 	@media only screen and (max-width: $bp-medium){
+		overflow: none;
 	}
 }

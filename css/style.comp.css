@@ -296,6 +296,40 @@ body {
     backface-visibility: hidden;
     position: absolute; }
 
+.skills {
+  padding: var(--sections-padding); }
+  .skills__container {
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 56.25em) {
+      .skills__container {
+        flex-direction: column; } }
+  .skills__entry {
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1.5rem 4rem;
+    border-radius: 3px;
+    flex: 0 0 28rem; }
+    @media only screen and (max-width: 56.25em) {
+      .skills__entry {
+        flex: 1; } }
+  .skills__body {
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap; }
+  .skills__iconcontainer {
+    padding: 0.5rem;
+    margin: 0.5rem; }
+  .skills__icon {
+    height: 4rem;
+    width: 4rem;
+    transition: all .2s; }
+    .skills__icon:hover {
+      transform: translateY(-3px); }
+    .skills__icon--animated {
+      animation: moveInBottom .5s ease-out .75s;
+      animation-fill-mode: backwards; }
+
 .projects {
   padding: var(--sections-padding);
   font-size: 1.8rem; }

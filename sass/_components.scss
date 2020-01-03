@@ -304,6 +304,58 @@
 }
 
 ////////////////////////////////////////
+// SKILLS
+.skills {
+	padding: var(--sections-padding);
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		@media only screen and (max-width: $bp-medium) {
+			flex-direction: column;
+		}
+	}
+
+	&__entry {
+		margin-top: 2rem;
+		padding: 2rem 2rem;
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 1.5rem 4rem;
+		border-radius: 3px;
+		flex: 0 0 28rem;
+
+		@media only screen and (max-width: $bp-medium) {
+			flex: 1;
+		}
+	}
+
+	&__body{
+		font-size: 2rem;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__iconcontainer {
+		padding: 0.5rem;
+		margin: 0.5rem;
+	}
+
+	&__icon {
+		height: 4rem;
+		width: 4rem;
+		transition: all .2s;
+
+		&:hover {
+			transform: translateY(-3px);
+		}
+		&--animated {
+			animation: moveInBottom .5s ease-out .75s;
+			animation-fill-mode: backwards;
+		}
+	}
+
+}
+
+////////////////////////////////////////
 // PROJECTS
 .projects {
 	padding: var(--sections-padding);

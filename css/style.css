@@ -309,7 +309,10 @@ body {
     padding: 2rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 1.5rem 4rem;
     border-radius: 3px;
-    flex: 0 0 25rem; }
+    flex: 0 0 28rem; }
+    @media only screen and (max-width: 56.25em) {
+      .skills__entry {
+        flex: 1; } }
   .skills__body {
     font-size: 2rem;
     display: flex;

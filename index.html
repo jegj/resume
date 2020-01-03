@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 		<head>
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,9 @@
 										<svg class="side-nav__icon">
 												<use xlink:href="img/sprite-sidebar.svg#icon-user"></use>
 										</svg>
-										<span class="side-nav__text">Acerca de mi</span>
+										<span class="side-nav__text" data-i18n="sidebar.about_me">
+											Acerca de mi
+										</span>
 									</a>
 								</li>
 								<li class="side-nav__item">
@@ -47,7 +49,7 @@
 									</a>
 								</li>
 								<li class="side-nav__item">
-									<a href="#" class="side-nav__link side-nav__link--animated language__link">
+									<a id="translateBtn" href="#" class="side-nav__link side-nav__link--animated side-nav__link--language">
 										<svg class="side-nav__icon">
 												<use xlink:href="img/sprite-sidebar.svg#icon-language"></use>
 										</svg>
@@ -492,5 +494,38 @@
 					</main>
 				</div>
 			</div>
+		<script>
+			const langs = ['es', 'en'];
+			function changeLang(lang){
+				return langs.filter(l => l != lang)[0];
+			}
+
+			function translate(dict){
+				const elements = document.querySelectorAll("[data-i18n]");
+				elements.forEach((element) => {
+					var keys = element.dataset.i18n.split(".");
+					var text = keys.reduce((obj, i) => obj[i], dict);
+					if (text) {
+						element.innerHTML = text;
+					}
+				});
+			}
+
+			document.addEventListener("DOMContentLoaded", function(event) {
+				const translateBtn = document.querySelector('#translateBtn');
+				translateBtn.addEventListener('click', function(){
+					var oldlang = document.documentElement.lang;
+					var newlang = changeLang(oldlang);
+					fetch(`/i18n/${newlang}.json`)
+					.then((res) => res.json())
+					.then((translation) => {
+						document.documentElement.lang = newlang;
+						translate(translation);
+					}).catch(function(error){
+						console.error(`Unable to load translation file for: ${newlang}`, error);
+					});
+				});
+			});
+		</script>
 		</body>
 </html>

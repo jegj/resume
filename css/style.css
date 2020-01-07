@@ -45,6 +45,12 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .container {
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
@@ -125,6 +131,9 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent; }
+
+.typography-translation {
+  animation: fadein 2s; }
 
 .resume_link:link, .resume_link:visited {
   font-size: 2rem;

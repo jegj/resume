@@ -18,5 +18,8 @@
 			"description_1": "Formo parte de una pequeña comunidad de developers apasionados por Node JS. Estamos directamente relacionados con el",
 			"description_2": "de Lima donde frecuentemente participamos. Hemos participado en el desarrollo de algunas paginas web, donde nos involucramos en todos los aspectos desde el diseño hasta despliegue y mantenimiento. Actualmente estamos desarrollando algunas ideas open source que estan en nuestro"
 		}
+	},
+	"skills":{
+		"title":"Habilidades"
 	}
 }

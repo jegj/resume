@@ -18,5 +18,8 @@
 			"description_1": "I am part of a small community of Node JS developers. We are related to Lima's",
 			"description_2": "where we frequently participate. We have been developing small web pages, getting involved in all the software aspects from the design to deployment. We also have a couple of open sources projects that you can find in our "
 		}
+	},
+	"skills":{
+		"title":"Skills"
 	}
 }

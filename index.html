@@ -134,7 +134,9 @@
 												Rebelstack.io
 											</a>
 										</h3>
-										<span class="experience__date">Enero 2017 - Presente</span>
+										<span class="experience__date" data-i18n="experience.rebelstack.date">
+											Enero 2017 - Presente
+										</span>
 									</div>
 								</div>
 								<div class="experience__body">
@@ -496,42 +498,9 @@
 				</div>
 			</div>
 		<script>
-			const langs = ['es', 'en'];
-			function changeLang(lang){
-				return langs.filter(l => l != lang)[0];
-			}
-
-			function translate(dict){
-				const elements = document.querySelectorAll("[data-i18n]");
-				elements.forEach((element) => {
-					var keys = element.dataset.i18n.split(".");
-					var text = keys.reduce((obj, i) => obj[i], dict);
-					if (text) {
-						element.classList.add('typography-translation');
-						element.innerHTML = text;
-
-						setTimeout(() => {
-							element.classList.remove('typography-translation');
-						}, 1000);
-					}
-				});
-			}
-
-			document.addEventListener("DOMContentLoaded", function(event) {
-				const translateBtn = document.querySelector('#translateBtn');
-				translateBtn.addEventListener('click', function(){
-					var oldlang = document.documentElement.lang;
-					var newlang = changeLang(oldlang);
-					fetch(`/i18n/${newlang}.json`)
-					.then((res) => res.json())
-					.then((translation) => {
-						document.documentElement.lang = newlang;
-						translate(translation);
-					}).catch(function(error){
-						console.error(`Unable to load translation file for: ${newlang}`, error);
-					});
-				});
-			});
+			const langs=['es','en'];function changeLang(lang){return langs.filter(l=>l!=lang)[0]}
+			function translate(dict){const elements=document.querySelectorAll("[data-i18n]");elements.forEach((element)=>{var keys=element.dataset.i18n.split(".");var text=keys.reduce((obj,i)=>obj[i],dict);if(text){element.classList.add('typography-translation');element.innerHTML=text;setTimeout(()=>{element.classList.remove('typography-translation')},1000)}})}
+			document.addEventListener("DOMContentLoaded",function(event){const translateBtn=document.querySelector('#translateBtn');translateBtn.addEventListener('click',function(){var oldlang=document.documentElement.lang;var newlang=changeLang(oldlang);fetch(`/i18n/${newlang}.json`).then((res)=>res.json()).then((translation)=>{document.documentElement.lang=newlang;translate(translation)}).catch(function(error){console.error(`Unable to load translation file for: ${newlang}`,error)})})})
 		</script>
 		</body>
 </html>

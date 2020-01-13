@@ -37,6 +37,10 @@
 	color: transparent;
 }
 
+.typography-translation {
+	animation: fadein 2s;
+}
+
 
 .resume_link:link, .resume_link:visited {
 	font-size: 2rem;
@@ -186,7 +190,6 @@
 		width: 2rem;
 		fill: var(--color-white);
 		margin-right: 1.2rem;
-
 	}
 }
 

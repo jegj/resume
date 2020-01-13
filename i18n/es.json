@@ -1,0 +1,31 @@
+{
+	"sidebar": {
+		"about_me": "Acerca de mi",
+		"experience": "Experiencia",
+		"skills": "Habilidades",
+		"translate": "English"
+	},
+	"main": {
+		"description": "Soy Full Stack Developer con interés en el Desarrollo Web. Comencé como PHP/Python Developer dando soporte o creando aplicaciones MVC con Yii/Django y Jquery, pero en los últimos años he estado trabajando con NodeJS(no puedo dejarlo) desarrollando REST endpoints en el Backend y trabajando con Single Page Applications y Progressive Web Apps en el Frontend con React o solo Vanilla Javascript. También crucé la linea al mundo de DevOps un par de veces, provisionando servidores con ansible y bashscript, creando contenedores con Docker, jugando con servicios en la nube con AWS o Firebase y creando CI/CD pipelines con Travis. Me gusta estar involucrado en todos los aspecto del desarrollo de software como puedes leer y siempre me enfoco en las mejores practicas y estándares del desarrollo del software."
+	},
+	"experience": {
+		"dealerbuilt":{
+			"date": "Mayo 2017 - Presente",
+			"description": "Trabajo en Dealerbuilt como Contractor en el departamento de IT, desarrollando soluciones internas para la intercomunicación de servicios, herramientas CLI personalizadas para la generación de backups integrados con AWS S3, levantando un sistema de monitoreo para las diversas base de datos Postgres que tenemos que vigilar. También cree un par de Electrons apps y REST endpoints con propósito interno."
+		},
+		"rebelstack":{
+			"date": "Enero 2017 - Presente",
+			"description_1": "Formo parte de una pequeña comunidad de developers apasionados por Node JS. Estamos directamente relacionados con el",
+			"description_2": "de Lima donde frecuentemente participamos. Hemos participado en el desarrollo de algunas paginas web, donde nos involucramos en todos los aspectos desde el diseño hasta despliegue y mantenimiento. Actualmente estamos desarrollando algunas ideas open source que estan en nuestro"
+		},
+		"excel":{
+			"date": "Mayo 2016 - Febrero 2017",
+			"description_1": "Trabaje como desarrollador outsourcing para",
+			"description_2": "desarrollando el proyecto",
+			"description_3": ". En un inicio trabaje en el Backend(REST API con Nodejs, Express, Redis, MongoDB y Postgres) pero termine cruzando la linea hacia el FrontEnd que está desarrollado en React. Adicionalmente también forme parte del equipo de DevOps gestionando la integración continua y deployments de la aplicación con GitHub, Heroku y AWS S3."
+		}
+	},
+	"skills":{
+		"title":"Habilidades"
+	}
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 		<head>
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,9 @@
 										<svg class="side-nav__icon">
 												<use xlink:href="img/sprite-sidebar.svg#icon-user"></use>
 										</svg>
-										<span class="side-nav__text">Acerca de mi</span>
+										<span class="side-nav__text" data-i18n="sidebar.about_me">
+											Acerca de mi
+										</span>
 									</a>
 								</li>
 								<li class="side-nav__item">
@@ -35,7 +37,7 @@
 										<svg class="side-nav__icon">
 												<use xlink:href="img/sprite-sidebar.svg#icon-books"></use>
 										</svg>
-										<span class="side-nav__text">Experiencia</span>
+										<span class="side-nav__text" data-i18n="sidebar.experience">Experiencia</span>
 									</a>
 								</li>
 								<li class="side-nav__item">
@@ -43,22 +45,22 @@
 										<svg class="side-nav__icon">
 												<use xlink:href="img/sprite-sidebar.svg#icon-laptop"></use>
 										</svg>
-										<span class="side-nav__text">Habilidades</span>
+										<span class="side-nav__text" data-i18n="sidebar.skills">Habilidades</span>
 									</a>
 								</li>
 								<li class="side-nav__item">
-									<a href="#" class="side-nav__link side-nav__link--animated language__link">
+									<a id="translateBtn" href="#" class="side-nav__link side-nav__link--animated side-nav__link--language">
 										<svg class="side-nav__icon">
 												<use xlink:href="img/sprite-sidebar.svg#icon-language"></use>
 										</svg>
-										<span class="side-nav__text">English</span>
+										<span class="side-nav__text" data-i18n="sidebar.translate">English</span>
 									</a>
 								</li>
 							</ul>
 						</div>
 
 						<div class="legal">
-							&copy; 2020 by @jegj. Todos los derechos reservados.
+							Copyright &copy; 2020 by jegj.
 						</div>
 					</nav>
 					<main class="main-view">
@@ -74,8 +76,8 @@
 								</svg>
 								<button class="btn-inline">Lima, Perú</button>
 							</div>
-							<p class="typography-description">
-								Full Stack Developer con interés en el desarrollo de aplicaciones Web y Mobile. Comencé como Python Developer pero los últimos años estoy dedicando la mayoría de mi tiempo a JavaScript y DevOps. Gran entusiasta de las Progressive Web Apps y las Single Page Applications así también como el diseño y desarrollo de REST API. Comenzando con el desarrollo de aplicaciones Desktops con Electron y fascinado en todos los aspectos de la ingeniería de Software. Soy muy flexible para trabajar y aprender nuevas tecnologías y me gusta involucrarme en todos los aspectos del desarrollo de Software como Frontend, Backend y Devops.
+							<p class="typography-description" data-i18n="main.description">
+								Soy Full Stack Developer con interés en el Desarrollo Web. Comencé como PHP/Python Developer dando soporte o creando aplicaciones MVC con Yii/Django y Jquery, pero en los últimos años he estado trabajando con NodeJS(no puedo dejarlo) desarrollando REST endpoints en el Backend y trabajando con Single Page Applications y Progressive Web Apps en el Frontend con React o solo Vanilla Javascript. Tambien crucé la linea al mundo de DevOps un par de veces, provisionando servidores con ansible y bashscript, creando contenedores con Docker, jugando con servicios en la nube con AWS o Firebase y creando CI/CD pipelines con Travis. Me gusta estar involucrado en todos los aspecto del desarrollo de software como puedes leer y siempre me enfoco en las mejores practicas y estándares del desarrollo del software.
 							</p>
 							<div class="about__connections">
 								<a href="https://www.facebook.com/javier.galarza.58" class="about__link about__link--animated" target="blank" title="Facebook">
@@ -112,15 +114,14 @@
 												DealerBuilt
 											</a>
 										</h3>
-										<span class="experience__date">Mayo 2017 - Presente</span>
+										<span class="experience__date" data-i18n="experience.dealerbuilt.date">
+											Mayo 2017 - Presente
+										</span>
 									</div>
 								</div>
 								<div class="experience__body">
-									<p class="typography-description">
-										Formo parte del equipo de IT de DealerBuilt, desarrollando soluciones tecnologicas de uso interno para
-										el resto de los departamentos como pequeñas REST APIs con Nodejs y Express junto con Postgres, aplicaciones desktop con Electron,
-										aplicaciones web con React y mucho más involucrado en la automatizacion de procesos de desarrollo, deployments, gestion, mantenimiento y monitores de servidores
-										de base de datos de los diversos clientes y aplicaciones con herramientas como: ansible, telegraf, influxdb, chronograf.
+									<p class="typography-description" data-i18n="experience.dealerbuilt.description">
+										Trabajo en Dealerbuilt como Contractor en el departamento de IT, desarrollando soluciones internas para la intercomunicación de servicios, herramientas CLI personalizadas para la generación de backups integrados con AWS S3, levantando un sistema de monitoreo para las diversas base de datos Postgres que tenemos que vigilar. También cree un par de Electrons apps y REST endpoints con propósito interno.
 									</p>
 								</div>
 							</div>
@@ -133,17 +134,19 @@
 												Rebelstack.io
 											</a>
 										</h3>
-										<span class="experience__date">Enero 2017 - Presente</span>
+										<span class="experience__date" data-i18n="experience.rebelstack.date">
+											Enero 2017 - Presente
+										</span>
 									</div>
 								</div>
 								<div class="experience__body">
 									<p class="typography-description">
-										Formo parte de una pequeña comunidad de developers apacionados por Node JS y Javascript. Estamos directamente relacionados con el
+										<span data-i18n="experience.rebelstack.description_1">Formo parte de una pequeña comunidad de developers apasionados por Node JS y Javascript. Estamos directamente relacionados con el</span>
 										<a class="resume_link" href="https://www.meetup.com/es/Lima-NodeJS-Meetup/" target="_blank">
 											Node JS MeetUp
 										</a>
-										de Lima donde frecuentemente participamos. Hemos participado en el desarrollo de algunas paginas web, donde nos involucramos en todos los aspectos desde el diseño hasta despliegue y mantenimiento. Actualmente estamos desarrollando algunas ideas open source que estan en nuestro
-										<a class="resume_link" href="https://github.com/rebelstackio" target="_blank">Github</a>  :)
+										<span data-i18n="experience.rebelstack.description_2">de Lima donde frecuentemente participamos. Hemos participado en el desarrollo de algunas paginas web, donde nos involucramos en todos los aspectos desde el diseño hasta despliegue. Actualmente estamos desarrollando algunas ideas open source que están en nuestro</span>
+										<a class="resume_link" href="https://github.com/rebelstackio" target="_blank">Github</a>
 									</p>
 								</div>
 							</div>
@@ -156,17 +159,20 @@
 												Excel SoftSources
 											</a>
 										</h3>
-										<span class="experience__date">Mayo 2016 - Febrero 2017</span>
+										<span class="experience__date" data-i18n="experience.excel.date">Mayo 2016 - Febrero 2017</span>
 									</div>
 								</div>
 								<div class="experience__body">
 									<p class="typography-description">
-										Trabaje como desarrollador outsourcing para <a class="resume_link" href="https://total-apps.com/" target="blank">TotalApps</a>
-										desarrollando el proyecto <a class="resume_link" href="https://videocheckout.com/" target="blank">VideoCheckout</a>, involucrandome
-										inicialmente en el Backend(REST API con Nodejs, Express, Redis, MongoDB y Postgres) pero termine cruzando la linea hacia el FrontEnd que esta
-										desarrollado en React. Adicionalmente tambien forme parte del dequipo de DevOps gestionando la integración continua y deployments de la aplicación
-										con Heroku para el backend y AWS S3 para el frontend. Basicamente era una aplicacion de gestion de videos, donde era posible realizar compras y donaciones
-										dentro del mismo video, el cual podia ser importado en Facebook por un plugin en flash
+										<span data-i18n="experience.excel.description_1">Trabaje como desarrollador outsourcing para</span>
+										<a class="resume_link" href="https://total-apps.com/" target="blank">TotalApps</a>
+										<span data-i18n="experience.excel.description_2">
+											desarrollando el proyecto
+										</span>
+										<a class="resume_link" href="https://videocheckout.com/" target="blank">VideoCheckout</a>
+										<span data-i18n="experience.excel.description_3">
+											En un inicio trabaje en el Backend(REST API con Nodejs, Express, Redis, MongoDB y Postgres) pero termine cruzando la linea hacia el FrontEnd que esta desarrollado en React. Adicionalmente también forme parte del equipo de DevOps gestionando la integración continua y deployments de la aplicación con Heroku y AWS S3.
+										</span>
 									</p>
 								</div>
 							</div>
@@ -190,7 +196,7 @@
 										</a>
 										del puerto de Paracas. Una aplicacion para automatizar, manejar y gestionar las operaciones internas del puerto controlando los tiempos de sus operaciones y generando reportes diarios.
 										Tambien desarrollo una aplicacion de escritorio que permite conectar la aplicacion web con las balanzas del puerto. Todo el proyecto
-										esta desarrollado con Python/Django junto con Postgres en el backend y JQuery para el frontend. Adicionalmente me encargaba de los despliegues y monitoreo de
+										está desarrollado con Python/Django junto con Postgres en el backend y JQuery para el frontend. Adicionalmente me encargaba de los despliegues y monitoreo de
 										la aplicacion.
 									</p>
 								</div>
@@ -232,18 +238,20 @@
 								</div>
 								<div class="experience__body">
 									<p class="typography-description">
-										Basicamente era como un junior developer, participe en varios proyectos arreglando bugs y
-										agregando algunas cuantas nuevas funcionalidades. El proyecto que mas toque fue <a class="resume_link"href="http://www.gtrmax.com/app/" target="_blank">GTRMAX</a>
-										el cual estaba desarrollado con PHP en el backend junto con Postgres y PostGIS, en cuanto al frontend estaba complemtamente en
+										<span>Basicamente era como un junior developer, participe en varios proyectos arreglando bugs y
+										agregando algunas cuantas nuevas funcionalidades. El proyecto que mas toque fue</span> <a class="resume_link"href="http://www.gtrmax.com/app/" target="_blank">GTRMAX</a>
+										<span>el cual estaba desarrollado con PHP en el backend junto con Postgres y PostGIS, en cuanto al frontend estaba complemtamente en
 										Vanilla JS con la libreria Open Layer. Despues desarrolle pequeños  endpoints para una REST API con el framework YII para la nueva actualizacion
-										de la aplicación.
+										de la aplicación.</span>
 									</p>
 								</div>
 							</div>
 						</section>
 						<!--  SKILLS -->
 						<section class="skills" id="skills">
-							<h1 class="main-typography">Habilidades</h1>
+							<h1 class="main-typography" data-i18n="skills.title">
+								Habilidades
+							</h1>
 							<div class="skills__container">
 									<!-- frontend -->
 								<div class="skills__entry">
@@ -492,5 +500,10 @@
 					</main>
 				</div>
 			</div>
+		<script>
+			const langs=['es','en'];function changeLang(lang){return langs.filter(l=>l!=lang)[0]}
+			function translate(dict){const elements=document.querySelectorAll("[data-i18n]");elements.forEach((element)=>{var keys=element.dataset.i18n.split(".");var text=keys.reduce((obj,i)=>obj[i],dict);if(text){element.classList.add('typography-translation');element.innerHTML=text;setTimeout(()=>{element.classList.remove('typography-translation')},1000)}})}
+			document.addEventListener("DOMContentLoaded",function(event){const translateBtn=document.querySelector('#translateBtn');translateBtn.addEventListener('click',function(){var oldlang=document.documentElement.lang;var newlang=changeLang(oldlang);fetch(`/i18n/${newlang}.json`).then((res)=>res.json()).then((translation)=>{document.documentElement.lang=newlang;translate(translation)}).catch(function(error){console.error(`Unable to load translation file for: ${newlang}`,error)})})})
+		</script>
 		</body>
 </html>

@@ -25,7 +25,7 @@
 			"description_3": ". En un inicio trabaje en el Backend(REST API con Nodejs, Express, Redis, MongoDB y Postgres) pero termine cruzando la linea hacia el FrontEnd que está desarrollado en React. Adicionalmente también forme parte del equipo de DevOps gestionando la integración continua y deployments de la aplicación con GitHub, Heroku y AWS S3."
 		},
 		"business": {
-			"title": "Analista de Sistemas",
+			"title": "Software Engineer",
 			"date": "Octubre 2015 - Mayo 2016",
 			"description_1": "Trabaje como desarrollador en la primera fase del proyecto",
 			"description_2": "Básicamente el proyecto es un MVC con Python/Django junto con Postgres en el Backend y JQuery para el Frontend. También comprendía una aplicación Desktop con Python, adicionalmente me encargaba de los despliegues y monitoreo de dichas aplicaciones."

@@ -29,6 +29,12 @@
 			"date": "Octubre 2015 - Mayo 2016",
 			"description_1": "Trabaje como desarrollador en la primera fase del proyecto",
 			"description_2": "Básicamente el proyecto es un MVC con Python/Django junto con Postgres en el Backend y JQuery para el Frontend. También comprendía una aplicación Desktop con Python, adicionalmente me encargaba de los despliegues y monitoreo de dichas aplicaciones."
+		},
+		"cgts":{
+			"title": "Ingeniero de Desarrollo",
+			"date": "Septiembre 2014 - Agosto 2015",
+			"description_1": "Trabaje como desarrollador en la primera fase del proyecto",
+			"description_2": "El proyecto es un MVC desarrollado con Python/Django junto con Postgres en el Backend y JQuery para el Frontend."
 		}
 	},
 	"skills":{

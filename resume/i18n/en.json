@@ -29,6 +29,12 @@
 			"date": "Oct 2015 - May 2016",
 			"description_1": "I worked as Software Engineer in the first iteration of ",
 			"description_2": "The project is a MVC Python/Django application with Postgres in the Backend and JQuery in the Frontend. It also has a Python Desktop application, additionally, i was in charge of the application's deployment and monitoring."
+		},
+		"cgts":{
+			"title": "Software Engineer",
+			"date": "Septiembre 2014 - Agosto 2015",
+			"description_1": "I worked as Software Engineer in the first iteration of ",
+			"description_2": "The project is a MVC Python/Django application with Postgres in the Backend and JQuery in the Frontend."
 		}
 	},
 	"skills":{

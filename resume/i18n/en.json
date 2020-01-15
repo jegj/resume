@@ -25,7 +25,7 @@
 			"description_3": ". I started working in the Backend(REST API with Nodejs, Express, Redis, MongoDB and Postgres) but i also worked in the FrontEnd with React. In adition, I worked in the DevOps team setting up a CI/CD pipeline with GitHub, Heroku and AWS S3."
 		},
 		"business": {
-			"title": "Analista de Sistemas",
+			"title": "Software Engineer",
 			"date": "Oct 2015 - May 2016",
 			"description_1": "I worked as Software Engineer in the first iteration of ",
 			"description_2": "The project is a MVC Python/Django application with Postgres in the Backend and JQuery in the Frontend. It also has a Python Desktop application, additionally, i was in charge of the application's deployment and monitoring."

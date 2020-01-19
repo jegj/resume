@@ -35,6 +35,11 @@
 			"date": "Septiembre 2014 - Agosto 2015",
 			"description_1": "Trabaje como desarrollador en la primera fase del proyecto",
 			"description_2": "El proyecto es un MVC desarrollado con Python/Django junto con Postgres en el Backend y JQuery para el Frontend."
+		},
+		"sigis":{
+			"title": "Analista Medio de Desarrollo",
+			"date": "Octube 2013 - Septiembre 2014",
+			"description_1": "Basicamente era como un junior developer, participe en varios proyectos arreglando bugs y agregando algunas cuantas nuevas funcionalidades. También agregue REST endpoints con el framework Yii y debugue varias funciones en Postgres."
 		}
 	},
 	"skills":{

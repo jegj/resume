@@ -35,6 +35,11 @@
 			"date": "Septiembre 2014 - Agosto 2015",
 			"description_1": "I worked as Software Engineer in the first iteration of ",
 			"description_2": "The project is a MVC Python/Django application with Postgres in the Backend and JQuery in the Frontend."
+		},
+		"sigis":{
+			"title": "Junior Software Developer",
+			"date": "Oct 2013 - Sep 2014",
+			"description_1": "I worked as Junior Developer fixing bugs and adding small features on several legacy applications written in PHP and Jquery. Built a couple of REST endpoints with the Yii Framework and spent a lot time debugging and fixing Postgres functions."
 		}
 	},
 	"skills":{

@@ -6,7 +6,7 @@
 		"translate": "English"
 	},
 	"main": {
-		"description": "Soy Full Stack Developer con interés en el Desarrollo Web. Comencé como PHP/Python Developer dando soporte o creando aplicaciones MVC con Yii/Django y Jquery, pero en los últimos años he estado trabajando con NodeJS(no puedo dejarlo) desarrollando REST endpoints en el Backend y trabajando con Single Page Applications y Progressive Web Apps en el Frontend con React o solo Vanilla Javascript. También crucé la linea al mundo de DevOps un par de veces, provisionando servidores con ansible y bashscript, creando contenedores con Docker, jugando con servicios en la nube con AWS o Firebase y creando CI/CD pipelines con Travis. Me gusta estar involucrado en todos los aspecto del desarrollo de software como puedes leer y siempre me enfoco en las mejores practicas y estándares del desarrollo del software."
+		"description": "Soy Desarrollador Javascript/NodeJS con interés en el Desarrollo Web. Comencé como PHP/Python Developer dando soporte o creando aplicaciones MVC con Yii/Django y Jquery, pero en los últimos años he estado trabajando con NodeJS(no puedo dejarlo) desarrollando REST endpoints en el Backend y trabajando con Single Page Applications y Progressive Web Apps en el Frontend con React o solo Vanilla Javascript. También crucé la linea al mundo de DevOps un par de veces, provisionando servidores con ansible y bashscript, creando contenedores con Docker, jugando con servicios en la nube con AWS o Firebase y creando CI/CD pipelines con Travis. Me gusta estar involucrado en todos los aspecto del desarrollo de software como puedes leer y siempre me enfoco en las mejores practicas y estándares del desarrollo del software."
 	},
 	"experience": {
 		"dealerbuilt":{

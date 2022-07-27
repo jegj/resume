@@ -135,7 +135,8 @@ body {
 .typography-translation {
   animation: fadein 2s; }
 
-.resume_link:link, .resume_link:visited {
+.resume_link:link,
+.resume_link:visited {
   font-size: 2rem;
   cursor: pointer;
   text-transform: uppercase;
@@ -318,7 +319,7 @@ body {
     padding: 2rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 1.5rem 4rem;
     border-radius: 3px;
-    flex: 0 0 28rem; }
+    flex: 0 0 35rem; }
     @media only screen and (max-width: 56.25em) {
       .skills__entry {
         flex: 1; } }

@@ -6,43 +6,84 @@
 		"translate": "English"
 	},
 	"main": {
-		"description": "Soy Desarrollador Javascript/NodeJS con interés en el Desarrollo Web. Comencé como PHP/Python Developer dando soporte o creando aplicaciones MVC con Yii/Django y Jquery, pero en los últimos años he estado trabajando con NodeJS(no puedo dejarlo) desarrollando REST endpoints en el Backend y trabajando con Single Page Applications y Progressive Web Apps en el Frontend con React o solo Vanilla Javascript. También crucé la linea al mundo de DevOps un par de veces, provisionando servidores con ansible y bashscript, creando contenedores con Docker, jugando con servicios en la nube con AWS o Firebase y creando CI/CD pipelines con Travis. Me gusta estar involucrado en todos los aspecto del desarrollo de software como puedes leer y siempre me enfoco en las mejores practicas y estándares del desarrollo del software."
+		"description": "Comencé como un Full Stack Web Developer escribiendo código en Python y PHP con algunos frameworks para desarrollo web(Django y Yii) y PostgreSQL sobre entornos Linux. En el frontend, principalmente escribo código con Javascript(JQuery), pero me siento más cómodo en el backend. Luego me encontraría con NodeJS, donde pasaría la mayor parte de mi carrera escribiendo código, desde REST APIs, servicios internos, aplicaciones de escritorio y hasta CLIs. Trato de no enfocarme en un solo lenguaje de programación y seguir las mejores prácticas y patrones. Me gusta aprender y probar nuevas tecnologías y lenguajes como Rust donde estoy dando mis primeros pasos. Gran entusiasta de código libre y la administración/automatización de servidores Linux, IAC, SRE, Devops, infraestructura en la nube donde cada vez me siento más entusiasmado en adentrarme más en este mundo. Tengo conocimientos en Ansible, desarrollo de bashscripts y administración/desarrollo de PostgreSQL. Realmente me divierto con los retos de un backend developer y un sysadmin."
 	},
 	"experience": {
-		"dealerbuilt":{
+		"dealerbuilt": {
 			"date": "Mayo 2017 - Presente",
-			"description": "Trabajo en Dealerbuilt como Contractor en el departamento de IT, desarrollando soluciones internas para la intercomunicación de servicios, herramientas CLI personalizadas para la generación de backups integrados con AWS S3, levantando un sistema de monitoreo para las diversas base de datos Postgres que tenemos que vigilar. También cree un par de Electrons apps y REST endpoints con propósito interno."
+			"sys": "Como SysAdmin/DBA:",
+			"sys-1": "- Administración de mas de 150 servidores Linux( AWS VMWare y también on-prem ) específicamente Ubuntu Server (Trusty, Xenial y Bionic) y PostgreSQL(8.4, 9.6, 11, 12, y 13). Usando las mejores practicas paraacceso seguro, control de recurso, manejo de logs(syslog-ng, logrotate), seguridad(Crowdstrike, Wazuh, iptables, Fail2ban...etc), manejo de volúmenes LVM, patching(UnattendedUpgrades), aprovisionamiento y muchas tareas mas.",
+			"sys-2": "- Tareas básica relaciones a la administración de base datos como aprovisionamiento de instancias RDS, respaldo y backups(off-site), vacuum & analyze en las diversas tablas, migración de base de datos, despliegue, logical replication, index creation, DML, DDL, TCL, DCL, manejo de extensiones (pgBadger,pg_cron, pg_stat_statements y PL/sh), creación y mantenimiento de roles entre otras tareas relacionadas.",
+			"sys-3": "- Crear y mantener inventario de servidores para Ansible. ",
+			"sys-4": "- Instalar, configurar y mantener paquetes relacionados a PostgreSQL como PGAgent y PGBouncer.",
+			"sys-5": "- Despliegue, configuración y mantenimiento de Nginx, Apache y PM2 en varios servidores Ubuntu.",
+			"sys-6": "- Despliegue de una plataforma de métricas usando TICK Stack (Influxdb, Telegraf, Kapacitor, Chronograf & Grafana) y creación de  dashboards para  métricas como CPU, RAM, Disk Usage, Long Running Queries, Services Running, entre otras.",
+			"sys-7": "- Desarrollo de alertas usando TICK scripts.",
+			"sys-8": "- Desarrollar y mantener Ansible Playbooks( usando Molecule y Vagrant para testeo ) y bashscripts para la mayoría de la configuración e instalaciones en los servidores como: Generación de backups, Restauración de backups, Instalaciones de paquetes comunes, Configuraciones de seguridad , Migración de base de datos,  Patching,  Actualización de dependencias, Scripts para ventana de mantenimiento y entre otras tareas.",
+			"sys-9": "- Aprovisionamiento de Infraestructura en la nube usando Terraform y Ansible ( rotación de claves AWS, S3 provision, Lambda deployment, IAM, EC2, load balancer, Fargate y RDS).",
+			"sys-10": "- Configurar y desplegar una instancia de AWX para despliegue de Ansible playbooks.",
+			"sys-11": "- Crear Docker images y entornos Vagrant para desarrollo local.",
+			"dev": "Como NodeJS/PostgreSQL Developer:",
+			"dev-1": "- Desarrollo de un sistema de colas en NodeJS para eventos provenientes de la Base datos.",
+			"dev-2": "- Desarrollo de una aplicación en Electron para el Status Service de Vsphere.",
+			"dev-3": "- Desarrollo de una NodeJS CLI para la generación de backups en PostgreSQL(pg_dump), permitiendo reportar métricas y alertas relacionado a la creación y subida de backups a S3.",
+			"dev-4": "- Desarrollo de una NodeJS CLI para anonimización de backups de base de datos(pg_dump).",
+			"dev-5": "- Desarrollo de AWS Lambda usando NodeJS y otros servicio como SQS, EventBridge.",
+			"dev-6": "- Desarrollo de una NodeJS REST API con Express, JWT, systemd, PM2 y NGINX.",
+			"dev-7": "- Desarrollo de funciones de base datos usando SQL, PL/Python y PL/pgSQL."
 		},
-		"rebelstack":{
+		"rebelstack": {
 			"date": "Enero 2017 - Presente",
-			"description_1": "Formo parte de una pequeña comunidad de developers apasionados por Node JS. Estamos directamente relacionados con el",
-			"description_2": "de Lima donde frecuentemente participamos. Hemos participado en el desarrollo de algunas paginas web, donde nos involucramos en todos los aspectos desde el diseño hasta despliegue y mantenimiento. Actualmente estamos desarrollando algunas ideas open source que estan en nuestro"
+			"description_1": "Formó parte de esta comunidad open source, siendo una las principales encargadas del",
+			"description_2": "de Lima donde frecuentemente participamos. Desarrollamos proyectos open source e investigamos sobre diversas tecnologías. Las principales tecnologías que utilizamos son: ",
+			"dev-1": "- NodeJS, PostgreSQL, Firebase Real Time Database, Firebase Cloud Functions.",
+			"dev-2": "- JavaScript, React, Firebase.",
+			"dev-3": "- CI/CD pipelines con Travis, GitHub actions.",
+			"dev-4": "- Vagrant y Docker para entornos de desarrollo local.",
+			"dev-5": "- Ansible y Terraform para aprovisionar servicios en AWS, Digital Ocean y Linode."
 		},
-		"excel":{
+		"excel": {
 			"date": "Mayo 2016 - Febrero 2017",
-			"description_1": "Trabaje como desarrollador outsourcing para",
-			"description_2": "desarrollando el proyecto",
-			"description_3": ". En un inicio trabaje en el Backend(REST API con Nodejs, Express, Redis, MongoDB y Postgres) pero termine cruzando la linea hacia el FrontEnd que está desarrollado en React. Adicionalmente también forme parte del equipo de DevOps gestionando la integración continua y deployments de la aplicación con GitHub, Heroku y AWS S3."
+			"description_1": "Formé parte del equipo de Ingeniería, donde trabajé como desarrollador outsourcing para",
+			"description_2": "Participé en el desarrollo de",
+			"description_3": ",una aplicación web de gestión de vídeos que aumenta la conversión de las campañas de marketing en Facebook. Además de mis deberes de desarrollador, también me adentré en el mundo de DevOps, IAS, PAS y CI/CD. Las principales tecnologías que utilicé fueron:",
+			"dev-1": "- Desarrollo de una NodeJS REST API con Express, JWT, MongoDB y Redis(LUA scripts).",
+			"dev-2": "- Desarrollo de funciones de base datos usando SQL y PL/pgSQL en PostgreSQL(10).",
+			"dev-3": "- Frontend desarrollado usando ReactJS.",
+			"dev-4": "- Crear CI/CD pipeline con Travis, GitHub, AWS(S3) y Heroku.",
+			"dev-5": "- Crear y mantener un entorno Vagrant para desarrollo local."
 		},
 		"business": {
 			"title": "Analista de Sistemas",
 			"date": "Octubre 2015 - Mayo 2016",
-			"description_1": "Trabaje como desarrollador en la primera fase del proyecto",
-			"description_2": "Básicamente el proyecto es un MVC con Python/Django junto con Postgres en el Backend y JQuery para el Frontend. También comprendía una aplicación Desktop con Python, adicionalmente me encargaba de los despliegues y monitoreo de dichas aplicaciones."
+			"description_1": "Fui el desarrollador principal durante la primera fase del software de operaciones del Terminal Portuario de Paracas(",
+			"description_2": "), un software encargado de manejar las principales operaciones del puerto como el ingreso, control de peso y salida de camiones, arribo de naves, así como otras operaciones. También desarrolle el software de las balanzas, encargado de capturar el peso del camión y generar alertas en base al peso. Aparte de mis obligaciones como desarrollador, también administraba los servidores de producción/QA ( Debian) y me encargaba de los despliegues con Supervisor y Python VirtualEnvs. Las principales tecnologías que utilicé fueron:",
+			"dev-1": "- Desarrollo de una aplicación web usando Python/Django, supervisor y NGINX.",
+			"dev-2": "- Desarrollo de funciones de base datos usando SQL, PL/pgSQL y PostGIS en PostgreSQL(9.6).",
+			"dev-3": "- Frontend desarrollado usando JavaScript/JQuery.",
+			"dev-4": "- Desarrollo de una aplicación Desktop usando Python/Tkinter.",
+			"dev-5": "- Crear y mantener un entorno Vagrant para desarrollo local.",
+			"dev-6": "- Crear y mantener scripts de despliegue para servidores Debian."
 		},
-		"cgts":{
+		"cgts": {
 			"title": "Ingeniero de Desarrollo",
 			"date": "Septiembre 2014 - Agosto 2015",
-			"description_1": "Trabaje como desarrollador en la primera fase del proyecto",
-			"description_2": "El proyecto es un MVC desarrollado con Python/Django junto con Postgres en el Backend y JQuery para el Frontend."
+			"description_1": "Formé parte del equipo de Dearrollo, donde desarrollamos una aplicación web para el control y administración de los diferentes puntos turísticos del Ministerio de Turismo de Venezuela(MINTUR). Tambien comencé adentrandome en el mundo de los servidores Linux y el depliegue de aplicaciones. Las principales tecnologías que utilicé fueron:",
+			"dev-1": "- Desarrollo de una aplicación web usando Python/Django, virtualenv, supervisor y Apache.",
+			"dev-2": "- Desarrollo de funciones de base datos usando SQL y PL/pgSQL en PostgreSQL(9.6).",
+			"dev-3": "- Frontend desarrollado usando JavaScript/JQuery.",
+			"dev-4": "- Crear y mantener scripts de despliegue servidores CentOS."
 		},
-		"sigis":{
+		"sigis": {
 			"title": "Analista Medio de Desarrollo",
 			"date": "Octube 2013 - Septiembre 2014",
-			"description_1": "Basicamente era como un junior developer, participe en varios proyectos arreglando bugs y agregando algunas cuantas nuevas funcionalidades. También agregue REST endpoints con el framework Yii y debugue varias funciones en Postgres."
+			"description_1": "Fui parte del equipo de desarrollo, donde ayudé a construir nuevos módulos para GTRMAX, una aplicación web de seguimiento de vehículos siendo PDVSA (el mayor extractor y distribuidor de petróleo de Venezuela) el principal cliente. También reparé errores y realicé mejoras en Geomarketingtools, una aplicación web de marketing que permite analizar el potencial del mercado y la situación de un negocio a través de la ubicación geográfica exacta de los clientes. Finalmente, desarrollé una aplicación web interna para controlar los pagos de los diferentes servicios ofrecidos por SIGIS. Las principales tecnologías que utilicé fueron:",
+			"dev-1": "- Desarrollo de una aplicación web y una REST API usando PHP/Yii y Apache.",
+			"dev-2": "- Desarrollo de funciones de base datos usando SQL, PL/pgSQL y PostGIS en PostgreSQL(8.4).",
+			"dev-3": "- Frontend desarrollado usando JavaScript/JQuery y OpenLayer."
 		}
 	},
-	"skills":{
-		"title":"Habilidades"
+	"skills": {
+		"title": "Habilidades"
 	}
 }

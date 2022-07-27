@@ -6,43 +6,84 @@
 		"translate": "Español"
 	},
 	"main": {
-		"description": "I'm a Javascript/NodeJS Developer interested in web development. I started as PHP/Python developer, mantaining and creating MVC applications with Yii/Django and Jquery but in the last years, I have been working with NodeJS( I can't get out ) building REST endpoints in the Backend and working with Single Page Applications and Progressive Web Apps in the Frontend with React or just Vanilla Javascript. I also crossed the line into the DevOps world a couple of times, provisioning servers with ansible and Bashscript, creating Docker containers, playing around with cloud services as AWS or Firebase and setting up CI/CD pipelines with Travis. I like to get involved in all aspects of Software Development as you can read and I always focus on the best practices and standards of software development."
+		"description": "I started as a Full Stack Web Developer, writing code in Python and PHP using a couple of web frameworks (Django and Yii) and PostgreSQL over Linux environments on the backend side. On the frontend side, I mainly write code with JavaScript (JQuery) but I feel more comfortable on the backend side. Then I would find myself with Node JS, where I would spend most of my career writing code for REST APIs, Internal Services, CLIs, and Desktop Applications. I try to be language-agnostic and follow best practices and patterns. I always like to learn and test new technologies and languages (like Rust, where I’m taking my first steps). Big fan of the open source community and Linux Server Administration/Automation, IAC, SRE, DevOps, and Cloud Infrastructure, and looking forward to getting involved more in this world. I have a good background in Ansible, bashscript development, and PostgreSQL database administration and development. I enjoy the challenges of being a Backend Developer and a Linux SysAdmin."
 	},
 	"experience": {
-		"dealerbuilt":{
+		"dealerbuilt": {
 			"date": "May 2017 - Present",
-			"description": "I'm working on Dealerbuilt as a contractor in the IT department, developing solutions for services intercommunication,  custom CLI tools for backups generation with AWS S3 integration and setting up internal Monitoring Systems for all Postgres database servers that we have to watch with alerts system. Also, I created a couple of small Electron apps and REST endpoints for an internal purpose."
+			"sys": "As SysAdmin/DBA:",
+			"sys-1": "- Linux administration tasks on more than 150 database servers( on AWS VMware, and on-prem as well ) with Ubuntu Server (Trusty, Xenial, and Bionic) and PostgreSQL(8.4, 9.6, 11, 12, and 13). Providing best practices for secure access, resource control, log management(syslog-ng, logrotate), security(CrowdStrike, Wazuh, iptables, Fail2ban...etc), volume management with LVM, patching(UnattendedUpgrades), provisioning  among other tasks.",
+			"sys-2": "- DBA tasks like RDS provisioning, backup generation(off-site),vacuum & analyze on the database’s tables, database migration, database deployment, logical replication, index creation and management, DML, DDL, TCL, DCL, database extensions management( pgBadger,pg_cron, pg_stat_statements and PL/sh), role management and creation among other related tasks.",
+			"sys-3": "- Create and maintain the Ansible inventory.",
+			"sys-4": "- Install, configure, and maintain additional database tools/packages like PGAgent, PGBouncer.",
+			"sys-5": "- Install, configure and maintain Nginx, Apache, and PM2 instances on several Ubuntu servers.",
+			"sys-6": "- Build and maintain a metrics platform for the database servers using TICK Stack (Influxdb, Telegraf, Kapacitor, Chronograf & Grafana) and create the most common dashboard with stats like CPU, RAM, Disk Usage, Long Running Queries, Services Running, among others.",
+			"sys-7": "- Build and maintain alerts with TICK scripts.",
+			"sys-8": "- Build and maintain Ansible Playbooks( with Molecule and Vagrant for testing ) and bashscripts for the most common installation, operations, and configurations on the Linux servers like Backup Generation process, Backup Restore process, Common Services installation and configuration, Security, Database Migration, Server Patching,  Package Upgrade, Maintenance windows scripts among others tasks.",
+			"sys-9": "- Provision Cloud Infrastructure using Terraform and Ansible (AWS key migration, S3 provision, Lambda deployment, IAM, EC2, Load balancer, Fargate, and RDS).",
+			"sys-10": "- Setup and maintain an AWX server instance for the Ansible deployment.",
+			"sys-11": "- Create Docker image and Vagrant environment for local development.",
+			"dev": "As NodeJS/PostgreSQL Developer:",
+			"dev-1": "- Create and maintain a queue system using NodeJS that helps the communication of the database(based on events) with external services.",
+			"dev-2": "- Electron application for Status Service for Vsphere.",
+			"dev-3": "- A NodeJS CLI that involves the basic commands for backup generation in PostgreSQL (pg_dump), and allows registering metrics and alerts about the backups creation and upload process to S3 Buckets.",
+			"dev-4": "- A NodeJS CLI that allows the anonymization of logical backups(pg_dump).",
+			"dev-5": "- AWS Lambda Development using NodeJS and integrate with other service like SQS, EventBridge.",
+			"dev-6": "- Create NodeJS Rest APIs with Express, JWT,systemd, PM2 and NGINX.",
+			"dev-7": "- Database development with SQL, PL/Python and PL/pgSQL."
 		},
-		"rebelstack":{
+		"rebelstack": {
 			"date": "Jan 2017 - Present",
-			"description_1": "I am part of a small community of Node JS developers. We are related to Lima's",
-			"description_2": "where we frequently participate. We have been developing small web pages, getting involved in all the software aspects from the design to deployment. We also have a couple of open sources projects that you can find in our "
+			"description_1": "I'm part of this open source community, being one of the main responsible for Lima's",
+			"description_2": ".We develop open source projects and research about new technologies. Our main tech stack is",
+			"dev-1": "- NodeJS, PostgreSQL, Firebase Real Time Database and Firebase Cloud Functions.",
+			"dev-2": "- JavaScript, React, Firebase.",
+			"dev-3": "- CI/CD pipelines using Travis and GitHub actions.",
+			"dev-4": "- Vagrant and Docker for local development",
+			"dev-5": "- Ansible and Terraform for cloud provisioning(AWS, Digital Ocean and Linode)"
 		},
-		"excel":{
+		"excel": {
 			"date": "May 2016 - Feb 2017",
-			"description_1": "I worked as outsourcing developer for",
-			"description_2": "developing the project",
-			"description_3": ". I started working in the Backend(REST API with Nodejs, Express, Redis, MongoDB and Postgres) but i also worked in the FrontEnd with React. In adition, I worked in the DevOps team setting up a CI/CD pipeline with GitHub, Heroku and AWS S3."
+			"description_1": "I was part of the Engineering team, where I worked as an outsourcing developer for",
+			"description_2": ".I participated in the development of",
+			"description_3": ", a video management web application that increases the conversion of marketing campaigns on Facebook. Besides my developer duties, I also got into the DevOps world, IAS, PAS, and CI/CD. The key technologies I used were:",
+			"dev-1": "- Create and maintain a NodeJS REST API with Express, JWT, MongoDB, and Redis(LUA scripts).",
+			"dev-2": "- Database development using SQL and PL/pgSQL on PostgreSQL(10).",
+			"dev-3": "- Frontend development using ReactJS.",
+			"dev-4": "- Create a CI/CD pipeline with Travis, GitHub, AWS(S3), and Heroku.",
+			"dev-5": "- Create and maintain a Vagrant environment for local development."
 		},
 		"business": {
 			"title": "Software Engineer",
 			"date": "Oct 2015 - May 2016",
-			"description_1": "I worked as Software Engineer in the first iteration of ",
-			"description_2": "The project is a MVC Python/Django application with Postgres in the Backend and JQuery in the Frontend. It also has a Python Desktop application, additionally, i was in charge of the application's deployment and monitoring."
+			"description_1": "I was the main developer during the first phase of the operations software of the Paracas Port Terminal(",
+			"description_2": "), a software in charge of handling the main operations of the port like the entrance, weight control and exit of trucks, arrival of ships, as well as other operations. I also developed the software of the scales, in charge of capturing the weight of the truck and generating alerts based on the weight. Apart from my duties as a developer, I also managed the production/QA servers ( Debian ) and was in charge of deployments with supervisor and Python VirtualEnvs. The key technologies I used were:",
+			"dev-1": "- Web application development using Python/Django, supervisor, and NGINX.",
+			"dev-2": "- Database development using SQL and PL/pgSQL on PostgreSQL(9.6). ",
+			"dev-3": "- Frontend development using JavaScript/JQuery.",
+			"dev-4": "- Desktop application development using Python/Tkinter.",
+			"dev-5": "- Create and maintain a vagrant environment for local development.",
+			"dev-6": "- Create and maintain deployment scripts for deployment on a Debian Server."
 		},
-		"cgts":{
+		"cgts": {
 			"title": "Software Engineer",
 			"date": "Septiembre 2014 - Agosto 2015",
-			"description_1": "I worked as Software Engineer in the first iteration of ",
-			"description_2": "The project is a MVC Python/Django application with Postgres in the Backend and JQuery in the Frontend."
+			"description_1": "I was part of the Development team, where we developed a web application for the control and administration of the different tourist points of the Ministry of Tourism of Venezuela (MINTUR). Also, I began to incursion in the administration of Linux servers. The key technologies I used were:",
+			"dev-1": "- Web application development using Python/Django, virtualenv, supervisor, and Apache.",
+			"dev-2": "- Database development using SQL and PL/pgSQL on PostgreSQL(9.6).",
+			"dev-3": "- Frontend development using JavaScript/JQuery.",
+			"dev-4": "- Create and maintain deployment scripts for deployment on a CentOS Server."
 		},
-		"sigis":{
+		"sigis": {
 			"title": "Junior Software Developer",
 			"date": "Oct 2013 - Sep 2014",
-			"description_1": "I worked as Junior Developer fixing bugs and adding small features on several legacy applications written in PHP and Jquery. Built a couple of REST endpoints with the Yii Framework and spent a lot time debugging and fixing Postgres functions."
+			"description_1": "I was part of theDevelopment team, where I helped build new modules for GTRMAX, a vehicle tracking web application being PDVSA( biggest oil extractor and distributor in Venezuela) the major client. I also fixed bugs and made improvements in Geomarketingtools, a marketing web application that allows analyzing the market potential and the situation of a business through the exact geographical location of the customers. Finally, I developed an internal web application to control payments for the different services offered by SIGIS. The key technologies I used were:",
+			"dev-1": "- Web application and REST API development using PHP/Yii, and Apache.",
+			"dev-2": "- Database development using SQL, PL/pgSQL, and PostGIS on PostgreSQL(8.4).",
+			"dev-3": "- Frontend development using JavaScript/JQuery and OpenLayer."
 		}
 	},
-	"skills":{
-		"title":"Skills"
+	"skills": {
+		"title": "Skills"
 	}
 }

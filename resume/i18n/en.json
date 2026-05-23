@@ -10,7 +10,7 @@
 	},
 	"experience": {
 		"dealerbuilt": {
-			"date": "May 2017 - Present",
+			"date": "May 2017 - Jul 2022",
 			"sys": "As SysAdmin/DBA:",
 			"sys-1": "- Linux administration tasks on more than 150 database servers( on AWS VMware, and on-prem as well ) with Ubuntu Server (Trusty, Xenial, and Bionic) and PostgreSQL(8.4, 9.6, 11, 12, and 13). Providing best practices for secure access, resource control, log management(syslog-ng, logrotate), security(CrowdStrike, Wazuh, iptables, Fail2ban...etc), volume management with LVM, patching(UnattendedUpgrades), provisioning  among other tasks.",
 			"sys-2": "- DBA tasks like RDS provisioning, backup generation(off-site),vacuum & analyze on the database’s tables, database migration, database deployment, logical replication, index creation and management, DML, DDL, TCL, DCL, database extensions management( pgBadger,pg_cron, pg_stat_statements and PL/sh), role management and creation among other related tasks.",
@@ -33,7 +33,7 @@
 			"dev-7": "- Database development with SQL, PL/Python and PL/pgSQL."
 		},
 		"rebelstack": {
-			"date": "Jan 2017 - Present",
+			"date": "Jan 2017 - Aug 2022",
 			"description_1": "I'm part of this open source community, being one of the main responsible for Lima's",
 			"description_2": ".We develop open source projects and research about new technologies. Our main tech stack is",
 			"dev-1": "- NodeJS, PostgreSQL, Firebase Real Time Database and Firebase Cloud Functions.",

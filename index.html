@@ -63,7 +63,8 @@
 				</div>
 
 				<div class="legal">
-					Copyright &copy; 2022 by jegj.
+					Copyright &copy; <span id="copyright-year"></span> by jegj.
+					<script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
 				</div>
 			</nav>
 			<main class="main-view">

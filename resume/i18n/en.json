@@ -9,6 +9,17 @@
 		"description": "I started as a Full Stack Web Developer, writing code in Python and PHP using a couple of web frameworks (Django and Yii) and PostgreSQL over Linux environments on the backend side. On the frontend side, I mainly write code with JavaScript (JQuery) but I feel more comfortable on the backend side. Then I would find myself with Node JS, where I would spend most of my career writing code for REST APIs, Internal Services, CLIs, and Desktop Applications. I try to be language-agnostic and follow best practices and patterns. I always like to learn and test new technologies and languages like Go and Rust. Big fan of the open source community and Linux Server Administration/Automation, IAC, SRE, DevOps, and Cloud Infrastructure, and looking forward to getting involved more in this world. I have a good background in Ansible, bashscript development, and PostgreSQL database administration and development. I enjoy the challenges of being a Backend Developer and a Linux SysAdmin. Native Spanish speaker with professional English proficiency."
 	},
 	"experience": {
+		"globallogic": {
+			"title": "Software Architect",
+			"date": "Sep 2022 - Present",
+			"description_1": "Contractor through GlobalLogic Latinoamérica for",
+			"description_2": ", an interactive instruction platform for K-12 classrooms. My main responsibilities are:",
+			"dev-1": "- Tech lead for the Learning pod at Nearpod, driving architecture and roadmap for the reporting microservices.",
+			"dev-2": "- Maintain and evolve Node.js microservices powering Nearpod's reporting features.",
+			"dev-3": "- Build and maintain LTI 1.3 integrations with Canvas, Schoology, Moodle, and other LMS platforms.",
+			"dev-4": "- Maintain the Google Classroom integration (assignments, grade passback, rostering).",
+			"dev-5": "- Mentor team members, drive code reviews, and own technical decisions for the pod."
+		},
 		"dealerbuilt": {
 			"date": "May 2017 - Jul 2022",
 			"sys": "As SysAdmin/DBA:",

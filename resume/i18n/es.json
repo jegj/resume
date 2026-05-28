@@ -9,6 +9,17 @@
 		"description": "Comencé como un Full Stack Web Developer escribiendo código en Python y PHP con algunos frameworks para desarrollo web(Django y Yii) y PostgreSQL sobre entornos Linux. En el frontend, principalmente escribo código con Javascript(JQuery), pero me siento más cómodo en el backend. Luego me encontraría con NodeJS, donde pasaría la mayor parte de mi carrera escribiendo código, desde REST APIs, servicios internos, aplicaciones de escritorio y hasta CLIs. Trato de no enfocarme en un solo lenguaje de programación y seguir las mejores prácticas y patrones. Me gusta aprender y probar nuevas tecnologías y lenguajes como Go y Rust. Gran entusiasta de código libre y la administración/automatización de servidores Linux, IAC, SRE, Devops, infraestructura en la nube donde cada vez me siento más entusiasmado en adentrarme más en este mundo. Tengo conocimientos en Ansible, desarrollo de bashscripts y administración/desarrollo de PostgreSQL. Realmente me divierto con los retos de un backend developer y un sysadmin. Hablante nativo de español con dominio profesional del inglés."
 	},
 	"experience": {
+		"globallogic": {
+			"title": "Arquitecto de Software",
+			"date": "Septiembre 2022 - Presente",
+			"description_1": "Contratista a través de GlobalLogic Latinoamérica para",
+			"description_2": ", una plataforma de instrucción interactiva para aulas K-12. Mis principales responsabilidades son:",
+			"dev-1": "- Líder técnico del Learning pod en Nearpod, dirigiendo la arquitectura y el roadmap de los microservicios de reportes.",
+			"dev-2": "- Mantener y evolucionar microservicios en Node.js que potencian las funcionalidades de reportes de Nearpod.",
+			"dev-3": "- Construir y mantener integraciones LTI 1.3 con Canvas, Schoology, Moodle y otras plataformas LMS.",
+			"dev-4": "- Mantener la integración con Google Classroom (asignaciones, registro de calificaciones y rostering).",
+			"dev-5": "- Mentorear a miembros del equipo, dirigir revisiones de código y tomar decisiones técnicas del pod."
+		},
 		"dealerbuilt": {
 			"date": "Mayo 2017 - Julio 2022",
 			"sys": "Como SysAdmin/DBA:",

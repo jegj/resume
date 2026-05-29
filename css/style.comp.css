@@ -383,6 +383,16 @@ body {
   position: absolute;
 }
 
+.certifications {
+  padding: var(--sections-padding);
+}
+.certifications__list {
+  list-style: none;
+}
+.certifications__entry {
+  padding: 1rem 0;
+}
+
 .skills {
   padding: var(--sections-padding);
 }

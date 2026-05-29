@@ -3,6 +3,7 @@
 		"about_me": "About me",
 		"experience": "Experience",
 		"skills": "Skills",
+		"certifications": "Certifications",
 		"translate": "Español"
 	},
 	"main": {
@@ -93,6 +94,13 @@
 			"dev-2": "- Database development using SQL, PL/pgSQL, and PostGIS on PostgreSQL(8.4).",
 			"dev-3": "- Frontend development using JavaScript/JQuery and OpenLayer."
 		}
+	},
+	"certifications": {
+		"title": "Certifications",
+		"docker": "Docker Mastery: with K8s & Swarm — Bret Fisher (Udemy)",
+		"claude_action": "Claude Code in Action — Anthropic",
+		"claude_engineers": "Claude Code for Real Engineers — Anthropic",
+		"aws": "AWS Certified Cloud Practitioner — Amazon Web Services"
 	},
 	"skills": {
 		"title": "Skills"

@@ -89,7 +89,7 @@
 		"sigis": {
 			"title": "Junior Software Developer",
 			"date": "Oct 2013 - Sep 2014",
-			"description_1": "I was part of theDevelopment team, where I helped build new modules for GTRMAX, a vehicle tracking web application being PDVSA( biggest oil extractor and distributor in Venezuela) the major client. I also fixed bugs and made improvements in Geomarketingtools, a marketing web application that allows analyzing the market potential and the situation of a business through the exact geographical location of the customers. Finally, I developed an internal web application to control payments for the different services offered by SIGIS. The key technologies I used were:",
+			"description_1": "I was part of theDevelopment team, where I helped build new modules for <a class=\"resume_link\" href=\"https://app.gtrmax.com/\" target=\"_blank\">GTRMAX</a>, a vehicle tracking web application being PDVSA( biggest oil extractor and distributor in Venezuela) the major client. I also fixed bugs and made improvements in Geomarketingtools, a marketing web application that allows analyzing the market potential and the situation of a business through the exact geographical location of the customers. Finally, I developed an internal web application to control payments for the different services offered by SIGIS. The key technologies I used were:",
 			"dev-1": "- Web application and REST API development using PHP/Yii, and Apache.",
 			"dev-2": "- Database development using SQL, PL/pgSQL, and PostGIS on PostgreSQL(8.4).",
 			"dev-3": "- Frontend development using JavaScript/JQuery and OpenLayer."
@@ -97,10 +97,13 @@
 	},
 	"certifications": {
 		"title": "Certifications",
+		"aws_solutions_architect": "AWS Certified Solutions Architect – Associate — Amazon Web Services",
 		"docker": "Docker Mastery: with K8s & Swarm — Bret Fisher (Udemy)",
 		"claude_action": "Claude Code in Action — Anthropic",
-		"claude_engineers": "Claude Code for Real Engineers — Anthropic",
-		"aws": "AWS Certified Cloud Practitioner — Amazon Web Services"
+		"claude_engineers": "Claude Code for Real Engineers — AI Hero",
+		"aws": "AWS Certified Cloud Practitioner — Amazon Web Services",
+		"lfcs": "LFCS: Linux Foundation Certified Systems Administrator — The Linux Foundation",
+		"scrum_fundamentals": "Scrum Fundamentals Certified (SFC) — Vabro.ai and VMEdu.com"
 	},
 	"skills": {
 		"title": "Skills"

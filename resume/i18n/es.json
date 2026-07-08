@@ -89,7 +89,7 @@
 		"sigis": {
 			"title": "Analista Medio de Desarrollo",
 			"date": "Octube 2013 - Septiembre 2014",
-			"description_1": "Fui parte del equipo de desarrollo, donde ayudé a construir nuevos módulos para GTRMAX, una aplicación web de seguimiento de vehículos siendo PDVSA (el mayor extractor y distribuidor de petróleo de Venezuela) el principal cliente. También reparé errores y realicé mejoras en Geomarketingtools, una aplicación web de marketing que permite analizar el potencial del mercado y la situación de un negocio a través de la ubicación geográfica exacta de los clientes. Finalmente, desarrollé una aplicación web interna para controlar los pagos de los diferentes servicios ofrecidos por SIGIS. Las principales tecnologías que utilicé fueron:",
+			"description_1": "Fui parte del equipo de desarrollo, donde ayudé a construir nuevos módulos para <a class=\"resume_link\" href=\"https://app.gtrmax.com/\" target=\"_blank\">GTRMAX</a>, una aplicación web de seguimiento de vehículos siendo PDVSA (el mayor extractor y distribuidor de petróleo de Venezuela) el principal cliente. También reparé errores y realicé mejoras en Geomarketingtools, una aplicación web de marketing que permite analizar el potencial del mercado y la situación de un negocio a través de la ubicación geográfica exacta de los clientes. Finalmente, desarrollé una aplicación web interna para controlar los pagos de los diferentes servicios ofrecidos por SIGIS. Las principales tecnologías que utilicé fueron:",
 			"dev-1": "- Desarrollo de una aplicación web y una REST API usando PHP/Yii y Apache.",
 			"dev-2": "- Desarrollo de funciones de base datos usando SQL, PL/pgSQL y PostGIS en PostgreSQL(8.4).",
 			"dev-3": "- Frontend desarrollado usando JavaScript/JQuery y OpenLayer."
@@ -97,10 +97,13 @@
 	},
 	"certifications": {
 		"title": "Certificaciones",
+		"aws_solutions_architect": "AWS Certified Solutions Architect – Associate — Amazon Web Services",
 		"docker": "Docker Mastery: with K8s & Swarm — Bret Fisher (Udemy)",
 		"claude_action": "Claude Code in Action — Anthropic",
-		"claude_engineers": "Claude Code for Real Engineers — Anthropic",
-		"aws": "AWS Certified Cloud Practitioner — Amazon Web Services"
+		"claude_engineers": "Claude Code for Real Engineers — AI Hero",
+		"aws": "AWS Certified Cloud Practitioner — Amazon Web Services",
+		"lfcs": "LFCS: Linux Foundation Certified Systems Administrator — The Linux Foundation",
+		"scrum_fundamentals": "Scrum Fundamentals Certified (SFC) — Vabro.ai and VMEdu.com"
 	},
 	"skills": {
 		"title": "Habilidades"
